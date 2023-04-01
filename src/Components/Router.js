@@ -5,6 +5,7 @@ import About from "../Pages/About";
 import Home from "../Pages/Home";
 import Contact from "../Pages/Contact";
 import Impressum from "../Pages/Impressum";
+import App404 from "../Pages/App404";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/impressum" element={<Impressum />} />
+        <Route path="/*" element={<App404 />} />
       </Routes>
     </Box>
   );

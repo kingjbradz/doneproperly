@@ -7,10 +7,10 @@ import Router from './Components/Router';
 function App() {
   return (
     <ThemeProvider theme={materialTheme}>
-      <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-      <Navbar />
-      <Router />
-      <Footer />
+      <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }}>
+        <Navbar />
+        <Router />
+        <Footer />
       </Box>
     </ThemeProvider>
   );
