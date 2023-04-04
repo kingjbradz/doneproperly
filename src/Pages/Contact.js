@@ -5,10 +5,18 @@ import {
   TextField,
   Button,
   useMediaQuery,
+  useTheme
 } from "@mui/material";
 import { Container } from "../Components/Elements";
+import { styled } from "@mui/system"
+
+const StyledTextField = styled(TextField)( ({ theme }) => ({
+  borderRadius: "8px",
+  backgroundColor: "#FFFEFE",
+}))
 
 const Contact = () => {
+  const theme = useTheme()
   const is600 = useMediaQuery("( min-width: 600px )");
   const [state, handleSubmit] = useForm("xgebnzey");
   if (state.succeeded) {
@@ -20,7 +28,7 @@ const Contact = () => {
   }
   return (
     <Container sx={{ flexDirection: "column" }}>
-      <Typography variant={is600 ? "h3" : "h4"} sx={{ marginBottom: 3 }}>
+      <Typography variant={is600 ? "h3" : "h4"} sx={{ marginBottom: 3, color: "brand.secondary" }}>
         Get in Touch!
       </Typography>
       <form
@@ -32,28 +40,31 @@ const Contact = () => {
           minWidth: is600 ? "450px" : "auto",
         }}
       >
-        <TextField
+        <StyledTextField
           id="name"
           type="name"
           name="name"
-          label={<label htmlFor="name">Name</label>}
-        />
+          color="outline"
+          label={<label htmlFor="name" style={{ backgroundColor: "#FFFEFE", borderRadius: "4px", padding: "0 2px" }}>Name</label>}
+          />
         <ValidationError prefix="Name" field="name" errors={state.errors} />
         <br/>
-        <TextField
+        <StyledTextField
           id="email"
           type="email"
           name="email"
-          label={<label htmlFor="email">Email Address</label>}
+          color="outline"
+          label={<label htmlFor="email" style={{ backgroundColor: "#FFFEFE", borderRadius: "4px", padding: "0 2px" }}>Email Address</label>}
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <br/>
-        <TextField
+        <StyledTextField
           multiline={true}
           minRows={5}
           id="message"
           name="message"
-          label={<label htmlFor="message">Message</label>}
+          color="outline"
+          label={<label htmlFor="message" style={{ backgroundColor: "#FFFEFE", borderRadius: "4px", padding: "0 2px" }}>Message</label>}
         />
         <ValidationError
           prefix="Message"

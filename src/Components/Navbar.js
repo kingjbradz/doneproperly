@@ -1,7 +1,5 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
   Box,
@@ -14,6 +12,8 @@ import {
   Avatar,
   useTheme,
 } from "@mui/material";
+import Sidebar from "./Sidebar";
+import { ThemeModeButton } from "./Elements";
 
 const navItems = [
   { text: "About", path: "/about" },
@@ -21,30 +21,25 @@ const navItems = [
   { text: "Impressum", path: "/impressum" },
 ];
 
-function ToggleColorMode() {
-  const [mode, setMode] = (React.useState < "light") | ("dark" > "light");
-  const colorMode = React.useMemo(
-    () => ({
-      toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-      },
-    }),
-    []
-  );
-}
-
-const Navbar = () => {
+const Navbar = ({ themeMode, setThemeMode }) => {
   const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
   const isMD = useMediaQuery(" (min-width: 900px) ");
-  const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
-  const colorMode = React.useContext(ColorModeContext);
+  const [sidebarOpen, setSidebarOpen] = React.useState(false);
+
+  const handleMode = () => {
+    setThemeMode((current) => !current);
+  };
+
+  const handleSidebar = () => {
+    setSidebarOpen((current) => !current);
+  };
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar sx={{ bgcolor: "black", boxShadow: 0 }}>
+      <AppBar sx={{ bgcolor: "brand.secondary", boxShadow: 0 }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           {isMD ? (
             <Box
@@ -54,9 +49,7 @@ const Navbar = () => {
                 minHeight: "inherit",
               }}
             >
-              <IconButton onClick={colorMode.toggleColorMode}>
-                <Brightness4Icon sx={{ color: "white" }} />
-              </IconButton>
+              <ThemeModeButton themeMode={themeMode} handleMode={handleMode} />
               <Box
                 sx={{
                   display: { xs: "none", sm: "flex" },
@@ -91,9 +84,29 @@ const Navbar = () => {
               </Box>
             </Box>
           ) : (
-            <IconButton sx={{ color: "brand.primary" }}>
-              <MenuIcon />
-            </IconButton>
+            <Box>
+              <IconButton
+                sx={{
+                  color: "brand.primary",
+                  maxWidth: "40px",
+                  display: "flex",
+                  justifyContent: "unset",
+                }}
+                onClick={handleSidebar}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Sidebar
+                sidebarOpen={sidebarOpen}
+                setSidebarOpen={setSidebarOpen}
+                handleSidebar={handleSidebar}
+                navItems={navItems}
+                theme={theme}
+                location={location}
+                navigate={navigate}
+                setThemeMode={setThemeMode}
+              />
+            </Box>
           )}
           <Avatar
             sx={{ cursor: "pointer" }}

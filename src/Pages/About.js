@@ -11,6 +11,7 @@ const AboutUs = () => {
         padding: is750 ? "0 5em" : 2,
         flexDirection: is750 ? "row" : "column",
         justifyContent: "space-evenly",
+        color: "brand.secondary"
       }}
     >
       <Box sx={{ display: "flex", margin: is750 ? "0 8px 0 0" : "0 0 8px 0", justifyContent: "center" }}>

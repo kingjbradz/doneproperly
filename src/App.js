@@ -1,14 +1,24 @@
-import { ThemeProvider, Box } from '@mui/material';
-import { materialTheme } from './Components/Theme';
+import { useState } from "react"
+import { ThemeProvider, Box } from "@mui/material";
+import { lightTheme } from "./Components/LightTheme";
+import { lightTheme as darkTheme } from "./Components/DarkTheme";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Router from './Components/Router';
+import Router from "./Components/Router";
 
 function App() {
-  return (
-    <ThemeProvider theme={materialTheme}>
-      <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }}>
-        <Navbar />
+  const [themeMode, setThemeMode] = useState(false)
+  return ( 
+    <ThemeProvider theme={!themeMode ? lightTheme : darkTheme}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          height: "100%",
+        }}
+      >
+        <Navbar themeMode={themeMode} setThemeMode={setThemeMode} />
         <Router />
         <Footer />
       </Box>
