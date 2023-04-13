@@ -1,19 +1,18 @@
-import React from "react"
-import { Box, IconButton, useTheme} from "@mui/material"
-import { Icon } from '@iconify/react'
-
+import React from "react";
+import { Box, Typography } from "@mui/material";
+import Marquee from "react-fast-marquee";
 
 const Footer = () => {
-    const theme = useTheme()
-    return (
-       <Box sx={{ width: "100%", bgcolor: "brand.secondary", height: "40px" }}>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <IconButton onClick={() => window.location.href = "https://www.instagram.com/doneproperlyberlin/"}><Icon icon="mdi:instagram" color={theme.palette.brand.primary} /></IconButton>
-            <IconButton onClick={() => window.location.href = "https://www.tiktok.com/@done_properly"}><Icon icon="ic:baseline-tiktok" color={theme.palette.brand.primary} /></IconButton>
-            <IconButton onClick={() => window.location.href = "https://soundcloud.com/doneproperlyberlin"}><Icon icon="mdi:soundcloud" color={theme.palette.brand.primary} /></IconButton>
-        </Box>
-       </Box>
-    )
-}
+  return (
+    <Box sx={{ width: "100%", bgcolor: "brand.secondary", height: "40px" }}>
+      <Marquee gradient={false} speed={75} pauseOnHover={true}>
+        <Typography 
+            variant="h4" sx={{ color: "brand.primary", paddingLeft: 2, cursor: "pointer" }} onClick={() => window.location.href = "https://forms.gle/aBRU2rigJj767scZA" }>
+            SIGN UP FOR OUR FREE WORKSHOP ON APRIL 15TH! SIGN UP FOR OUR FREE WORKSHOP ON APRIL 15TH!
+        </Typography>
+      </Marquee>
+    </Box>
+  );
+};
 
-export default Footer
+export default Footer;

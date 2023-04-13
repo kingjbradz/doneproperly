@@ -18,15 +18,7 @@ export const lightTheme = createTheme({
     components: {
         MuiCssBaseline: {
             styleOverrides: {
-                root: {
-
-                },
-                html: {
-
-                },
-                body: {
-
-                }
+                
             }
         },
     },

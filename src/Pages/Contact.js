@@ -5,7 +5,6 @@ import {
   TextField,
   Button,
   useMediaQuery,
-  useTheme
 } from "@mui/material";
 import { Container } from "../Components/Elements";
 import { styled } from "@mui/system"
@@ -16,7 +15,6 @@ const StyledTextField = styled(TextField)( ({ theme }) => ({
 }))
 
 const Contact = () => {
-  const theme = useTheme()
   const is600 = useMediaQuery("( min-width: 600px )");
   const [state, handleSubmit] = useForm("xgebnzey");
   if (state.succeeded) {
@@ -37,7 +35,8 @@ const Contact = () => {
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
-          minWidth: is600 ? "450px" : "auto",
+          minWidth: is600 ? "575px" : "100%",
+          padding: "8px"
         }}
       >
         <StyledTextField

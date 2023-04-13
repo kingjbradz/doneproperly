@@ -1,8 +1,6 @@
 import React from "react"
-import { Box, IconButton } from "@mui/material"
+import { Box, IconButton, Avatar, useTheme } from "@mui/material"
 import { styled } from "@mui/system"
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 export const Container = styled(Box)({
     display: "flex",
@@ -11,14 +9,16 @@ export const Container = styled(Box)({
 })
 
 export const ThemeModeButton = ({ themeMode, handleMode }) => {
-
+    const theme = useTheme()
     return (
         <IconButton onClick={handleMode}>
-                {!themeMode ? (
-                  <Brightness4Icon sx={{ color: "brand.primary" }} />
-                ) : (
-                  <Brightness7Icon sx={{ color: "brand.primary" }} />
-                )}
+          <Avatar 
+            src="https://d1g9ggdtg3kjm9.cloudfront.net/DP_logo_mail-removebg-preview.png" 
+            sx={{ 
+              bgcolor: !themeMode ? "brand.primary" : "brand.secondary",
+              outline: themeMode && `1px solid ${theme.palette.brand.primary}`
+              }} 
+            />
         </IconButton>
     )
 }

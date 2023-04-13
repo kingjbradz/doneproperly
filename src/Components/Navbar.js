@@ -9,14 +9,16 @@ import {
   IconButton,
   Button,
   useMediaQuery,
-  Avatar,
   useTheme,
 } from "@mui/material";
 import Sidebar from "./Sidebar";
 import { ThemeModeButton } from "./Elements";
+import SocialLinks from "./SocialLinks";
 
 const navItems = [
+  { text: "Home", path: "/" },
   { text: "About", path: "/about" },
+  { text: "Team", path: "/team" },
   { text: "Contact", path: "/contact" },
   { text: "Impressum", path: "/impressum" },
 ];
@@ -108,11 +110,7 @@ const Navbar = ({ themeMode, setThemeMode }) => {
               />
             </Box>
           )}
-          <Avatar
-            sx={{ cursor: "pointer" }}
-            onClick={() => navigate("/")}
-            src="https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/unnamed.jpeg"
-          />
+          {isMD && <SocialLinks /> }
         </Toolbar>
       </AppBar>
     </Box>

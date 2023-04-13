@@ -2,6 +2,7 @@ import React from "react";
 import { Drawer, Button, Box, IconButton } from "@mui/material";
 import { ThemeModeButton } from "./Elements";
 import CloseIcon from '@mui/icons-material/Close';
+import SocialLinks from "./SocialLinks";
 
 const Sidebar = ({
   sidebarOpen,
@@ -39,8 +40,8 @@ const Sidebar = ({
       }}
       sx={{ width: drawerWidth, flexShrink: 0, marginRight: "5px" }}
     >
-      <Box sx={{ display: "flex", justifyContent: "space-evenly", marginTop: 2 }}>
-        <IconButton onClick={() => setSidebarOpen(false)} sx={{ color: "brand.primary" }}>
+      <Box sx={{ display: "flex", justifyContent: "center", marginTop: 2 }}>
+        <IconButton onClick={() => setSidebarOpen(false)} sx={{ color: "brand.primary", marginRight: 1 }}>
           <CloseIcon />
         </IconButton>
         <ThemeModeButton themeMode={themeMode} handleMode={handleMode} />
@@ -61,7 +62,6 @@ const Sidebar = ({
                       ? (theme) => `5px solid ${theme.palette.brand.blorange}`
                       : `1px solid ${theme.palette.brand.primary}`,
                   borderRadius: 0,
-                  marginLeft: 2,
                 }}
               >
                 {text}
@@ -69,6 +69,7 @@ const Sidebar = ({
             </React.Fragment>
           );
         })}
+        <SocialLinks />
       </Box>
     </Drawer>
   );
