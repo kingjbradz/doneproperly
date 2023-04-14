@@ -8,6 +8,8 @@ export default class LoopingAnimationWhite extends React.Component {
             autoPlay
             muted 
             loop
+            defaultmuted
+            playsinline
             id="background-video"
             style={{
                 // position: "fixed",

@@ -8,9 +8,10 @@ export default class LoopingAnimationBlack extends React.Component {
             autoPlay
             muted 
             loop
+            defaultmuted
+            playsinline
             id="background-video"
             style={{
-                // position: "fixed",
                 width: "100%",
                 height: "100%",
                 maxWidth: "500px",
