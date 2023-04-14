@@ -14,7 +14,7 @@ const StyledTextField = styled(TextField)( ({ theme }) => ({
   backgroundColor: "#FFFEFE",
 }))
 
-const Contact = () => {
+const Contact = ({ themeMode }) => {
   const is600 = useMediaQuery("( min-width: 600px )");
   const [state, handleSubmit] = useForm("xgebnzey");
   if (state.succeeded) {
@@ -26,9 +26,9 @@ const Contact = () => {
   }
   return (
     <Container sx={{ flexDirection: "column" }}>
-      <Typography variant={is600 ? "h3" : "h4"} sx={{ marginBottom: 3, color: "brand.secondary" }}>
-        Get in Touch!
-      </Typography>
+      <img 
+      style={{ borderRadius: "50%", maxHeight: "150px", maxWidth: "150px", marginBottom: "32px" }}
+      src={ themeMode ? "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_2.jpeg" : "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_.jpeg" } alt="logo"/>
       <form
         onSubmit={handleSubmit}
         style={{
@@ -79,16 +79,23 @@ const Contact = () => {
               paddingRight: 2,
               paddingLeft: 2,
               bgcolor: "brand.secondary",
-              color: "brand.blorange",
+              color: "brand.logogrey",
               "&:hover": {
                 bgcolor: "brand.secondary",
-                color: "brand.blorange",
+                color: "brand.logogrey",
               },
             }}
           >
             Submit
           </Button>
       </form>
+        <br/>
+      <Typography sx={{ fontSize: "12px", textAlign: "center" }} >
+        You can also reach us at:
+        <br/>
+        hidoneproperly@gmail.com
+      </Typography>
+        <br/>
     </Container>
   );
 };

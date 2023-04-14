@@ -2,6 +2,8 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import { Box } from "@mui/material"
 import { Container } from "../Components/Elements"
+import LoopingAnimationWhite from "../Components/LoopingAnimationWhite"
+import LoopingAnimationBlack from "../Components/LoopingAnimationBlack"
 
 const Home = ({ themeMode }) => {
     const navigate = useNavigate()
@@ -10,9 +12,9 @@ const Home = ({ themeMode }) => {
             <Box onClick={() => navigate("/about")} sx={{ cursor: "pointer" }}>
                {
                 !themeMode ? 
-                <img src="https://d1g9ggdtg3kjm9.cloudfront.net/DP+logo_mail.png" style={{ width: "268px" }} alt="img" />
+                <LoopingAnimationWhite />
                 :
-                <img src="https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/unnamed.jpeg" alt="img" />
+                <LoopingAnimationBlack />
                } 
             </Box>
         </Container>
@@ -20,3 +22,6 @@ const Home = ({ themeMode }) => {
 }
 
 export default Home
+
+// https://dpbimg.s3.eu-central-1.amazonaws.com/moving_logo/1_mbps/done_properly_230413-b_1.mp4
+// https://dpbimg.s3.eu-central-1.amazonaws.com/moving_logo/1_mbps/done_properly_230413-w_1.mp4

@@ -55,13 +55,14 @@ const Sidebar = ({
                 sx={{
                   color:
                     path === location.pathname
-                      ? "brand.blorange"
+                      ? "brand.logogrey"
                       : "brand.primary",
                   borderBottom:
                     path === location.pathname
-                      ? (theme) => `5px solid ${theme.palette.brand.blorange}`
+                      ? (theme) => `5px solid ${theme.palette.brand.logogrey}`
                       : `1px solid ${theme.palette.brand.primary}`,
                   borderRadius: 0,
+                  fontWeight: 700
                 }}
               >
                 {text}

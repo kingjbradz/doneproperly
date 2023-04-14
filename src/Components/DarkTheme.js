@@ -10,11 +10,18 @@ export const lightTheme = createTheme({
             neoyellow: "#DCF45C",
             lineblue: "#3C67D1",
             outline: "#AB4F46",
+            logogrey: "#949494"
         },
         outline: {
-            main: "#AB4F46"
+            main: "#949494"
         }
     },
+    typography: {
+        fontFamily: [
+          'Cooper Hewitt',
+          'cursive',
+        ].join(','),
+      },
     components: {
         MuiCssBaseline: {
             styleOverrides: {
@@ -26,7 +33,18 @@ export const lightTheme = createTheme({
                 },
                 body: {
                     backgroundColor: "#000001"
-                }
+                },
+            },
+            MuiTypography: {
+                root: {
+                   fontFamily: '"Cooper Hewitt", sans-serif'
+                },
+                html: {
+                   fontFamily: '"Cooper Hewitt", sans-serif'
+                },
+                body: {
+                   fontFamily: '"Cooper Hewitt", sans-serif'
+                },
             }
         },
     },

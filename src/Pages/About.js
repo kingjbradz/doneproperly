@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Typography, useMediaQuery, Stack, Item } from "@mui/material";
-import { Container } from "../Components/Elements";
+import { Box, Typography, useMediaQuery, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 
 const LineBox = styled(Box)({
@@ -14,20 +13,15 @@ const LineBox = styled(Box)({
   "@media screen and (min-width: 750px)": {
     padding: "0 3em",
   },
-  "@media screen and (min-width: 1000px)": {
-    flexDirection: "row",
-  },
 });
 
 const RowBox = styled(Box)({
-  // maxWidth: "300px",
   textAlign: "center",
   justifyContent: "center",
   alignItems: "center",
 });
 
-const AboutUs = () => {
-  const is300 = useMediaQuery("( min-width: 300px )");
+const AboutUs = ({ themeMode }) => {
   const is750 = useMediaQuery("( min-width: 750px )");
   const is1000 = useMediaQuery("( mind-width: 1000px )");
   return (
@@ -39,9 +33,11 @@ const AboutUs = () => {
         sx={{
           maxHeight: `calc(${window.innerHeight}px - 100px)`,
           overflow: "scroll",
-          paddingTop: "100px",
         }}
       >
+      <img 
+      style={{ borderRadius: "50%", maxHeight: "75px", maxWidth: "75px", margin: "32px 0" }}
+      src={ themeMode ? "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_2.jpeg" : "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_.jpeg" } alt="logo"/>
         <LineBox>
           <RowBox>
             <Typography

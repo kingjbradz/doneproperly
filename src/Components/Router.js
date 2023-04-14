@@ -13,9 +13,9 @@ const Router = ({ themeMode }) => {
     <Box sx={{ paddingTop: "64px" }}>
       <Routes>
         <Route path="/" element={<Home themeMode={themeMode} />}  />
-        <Route path="/about" element={<About />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About themeMode={themeMode} />} />
+        <Route path="/team" element={<Team themeMode={themeMode} />} />
+        <Route path="/contact" element={<Contact themeMode={themeMode} />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/*" element={<App404 />} />
       </Routes>

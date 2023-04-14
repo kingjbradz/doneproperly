@@ -67,15 +67,16 @@ const Navbar = ({ themeMode, setThemeMode }) => {
                         sx={{
                           color:
                             path === location.pathname
-                              ? "brand.blorange"
+                              ? "brand.logogrey"
                               : "brand.primary",
                           borderBottom:
                             path === location.pathname
                               ? (theme) =>
-                                  `5px solid ${theme.palette.brand.blorange}`
+                                  `5px solid ${theme.palette.brand.logogrey}`
                               : "",
                           borderRadius: 0,
                           marginLeft: 2,
+                          fontWeight: 700
                         }}
                       >
                         {text}

@@ -28,11 +28,10 @@ const RowBox = styled(Box)({
 const LeftSpan = styled(Typography)({
   textAlign: "left",
   fontSize: "14px",
-  marginLeft: "8px"
+  marginLeft: "8px",
 })
 
-const AboutUs = () => {
-  const is750 = useMediaQuery("( min-width: 750px )");
+const AboutUs = ({ themeMode }) => {
   const is1000 = useMediaQuery("( mind-width: 1000px )");
   return (
     <>
@@ -41,11 +40,12 @@ const AboutUs = () => {
         justifyContent="center"
         alignItems="center"
         sx={{
-        //   maxHeight: `calc(${window.innerHeight}px - 100px)`,
           overflow: "scroll",
-        //   paddingTop: "100px",
         }}
       >
+      <img 
+      style={{ borderRadius: "50%", maxHeight: "75px", maxWidth: "75px", margin: "32px 0" }}
+      src={ themeMode ? "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_2.jpeg" : "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_.jpeg" } alt="logo"/>
         <LineBox>
           <RowBox sx={{ margin: 2 }}>
             <img src="https://d1g9ggdtg3kjm9.cloudfront.net/2.png" alt="noir" style={{ borderRadius: "10px" }} />
@@ -55,9 +55,9 @@ const AboutUs = () => {
             Creating DONE PROPERLY has been a passion project of mine for a while. I‘ve learnt to love music but most importantly the scene and I finally get a chance to do my part for the community.
             <br/>
             </Typography>
-            <LeftSpan>
+            <LeftSpan color="brand.secondary">
             <br/>
-            NOIR she/her 
+            <b>NOIR</b> she/her
             <br/>
             DJ & sales queen
             </LeftSpan>
@@ -70,9 +70,9 @@ const AboutUs = () => {
             I‘m a DJ from Australia, recently arrived in Berlin after living in Tapei, Tokyo, and Vancouver. Lover of disco, techno, breaks, havin‘ a good ol yarn and bringing my years of experience to you.
             <br/>
             </Typography>
-            <LeftSpan>
+            <LeftSpan color="brand.secondary">
             <br/>
-            JORDAN he/him
+            <b>JORDAN</b> he/him
             <br/>
             DJ & web developer
             </LeftSpan>
@@ -91,9 +91,9 @@ const AboutUs = () => {
             Unlike the two others I‘m not a DJ but I have a passion for music and community. And this is where I come into play: everyone has a place at DONE PROPERLY, there‘s so many ways for you to get involved.
             <br/>
             </Typography>
-            <LeftSpan>
+            <LeftSpan color="brand.secondary">
             <br/>
-            REBECCA she/they
+            <b>REBECCA</b> she/they
             <br/>
             not a DJ & creative director
             </LeftSpan>

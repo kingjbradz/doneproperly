@@ -27,11 +27,11 @@ const Impressum = () => {
         </SpaceBetweenBox>
         <SpaceBetweenBox>
             <Typography>Address</Typography>
-            <Typography>This Address</Typography>
+            <Typography>Koppenstraße 43, 10243 Berlin</Typography>
         </SpaceBetweenBox>
         <SpaceBetweenBox>
             <Typography>Email</Typography>
-            <Typography>This Email</Typography>
+            <Typography>hidoneproperly@gmail.com</Typography>
         </SpaceBetweenBox>
             </Box> 
        </Container>
