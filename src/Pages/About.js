@@ -31,8 +31,8 @@ const AboutUs = ({ themeMode }) => {
         justifyContent="center"
         alignItems="center"
         sx={{
-          maxHeight: `calc(${window.innerHeight}px - 100px)`,
-          overflow: "scroll",
+          // maxHeight: `calc(${window.innerHeight}px - 100px)`,
+          // overflow: "scroll",
         }}
       >
       <img 

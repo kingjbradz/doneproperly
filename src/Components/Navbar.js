@@ -108,6 +108,7 @@ const Navbar = ({ themeMode, setThemeMode }) => {
                 location={location}
                 navigate={navigate}
                 setThemeMode={setThemeMode}
+                themeMode={themeMode}
               />
             </Box>
           )}
