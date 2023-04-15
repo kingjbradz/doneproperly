@@ -21,7 +21,7 @@ export default class LoopingAnimationBlack extends React.Component {
             }}
             >
                 <source
-                src="https://d1g9ggdtg3kjm9.cloudfront.net/moving_logo/1_mbps/done_properly_230413-b_1.mp4"
+                src="https://d1g9ggdtg3kjm9.cloudfront.net/newimg15042023/done_properly_230413-b_1.mp4"
                 type="video/mp4" />
             </video>
         )
