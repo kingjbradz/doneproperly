@@ -9,17 +9,17 @@ const Footer = () => {
       <Marquee gradient={false} speed={75} pauseOnHover={true}>
         <Typography 
             variant="h4" sx={{ color: "brand.primary", paddingLeft: 2, cursor: "pointer" }} onClick={() => window.location.href = "https://forms.gle/Ejmfsd2Zr68om7sR8" }>
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
-            WORKSHOP #2 COMING UP SOON!{marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
+            SIGN UP FOR OUR FREE WORKSHOP ON JUNE 3RD! {marginSpan}
         </Typography>
       </Marquee>
     </Box>
