@@ -9,7 +9,7 @@ const Home = ({ themeMode }) => {
     const navigate = useNavigate()
     const is740 = useMediaQuery("( min-width: 740px )")
     return (
-        <Container>
+        <Container sx={{ height: "100%" }}>
             <Box onClick={() => navigate("/about")} sx={{ cursor: "pointer", maxWidth: is740 ? "initial" : "80%" }}>
                {
                 !themeMode ? 
