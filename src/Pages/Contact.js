@@ -26,9 +26,6 @@ const Contact = ({ themeMode }) => {
   }
   return (
     <Container sx={{ flexDirection: "column" }}>
-      <img 
-      style={{ borderRadius: "50%", maxHeight: "150px", maxWidth: "150px", marginBottom: "32px" }}
-      src={ themeMode ? "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_2.jpeg" : "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_.jpeg" } alt="logo"/>
       <form
         onSubmit={handleSubmit}
         style={{

@@ -10,7 +10,7 @@ import Team from "../Pages/Team";
 
 const Router = ({ themeMode }) => {
   return (
-    <Box sx={{ paddingTop: "64px" }}>
+    <Box>
       <Routes>
         <Route path="/" element={<Home themeMode={themeMode} />}  />
         <Route path="/about" element={<About themeMode={themeMode} />} />

@@ -35,9 +35,6 @@ const AboutUs = ({ themeMode }) => {
           // overflow: "scroll",
         }}
       >
-      <img 
-      style={{ borderRadius: "50%", maxHeight: "75px", maxWidth: "75px", margin: "32px 0" }}
-      src={ themeMode ? "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_2.jpeg" : "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_.jpeg" } alt="logo"/>
         <LineBox>
           <RowBox>
             <Typography
