@@ -14,6 +14,7 @@ import {
 import Sidebar from "./Sidebar";
 import { ThemeModeButton } from "./Elements";
 import SocialLinks from "./SocialLinks";
+import DonePropImg from "./DonePropImg";
 
 const navItems = [
   { text: "Home", path: "/" },
@@ -39,7 +40,7 @@ const Navbar = ({ themeMode, setThemeMode }) => {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", justifyContent: "center" }}>
       <CssBaseline />
       <AppBar sx={{ bgcolor: "brand.secondary", boxShadow: 0 }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
@@ -115,6 +116,7 @@ const Navbar = ({ themeMode, setThemeMode }) => {
           {isMD && <SocialLinks /> }
         </Toolbar>
       </AppBar>
+      <DonePropImg themeMode={themeMode} />
     </Box>
   );
 };

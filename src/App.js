@@ -4,7 +4,7 @@ import { lightTheme } from "./Components/LightTheme";
 import { lightTheme as darkTheme } from "./Components/DarkTheme";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Router from "./Components/Router"
+import Router from "./Components/Router";
 
 function App() {
   const [themeMode, setThemeMode] = useState(false)
