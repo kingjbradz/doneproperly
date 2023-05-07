@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Typography, useMediaQuery, Stack } from "@mui/material";
+import { Box, Typography, useMediaQuery, Stack, IconButton, useTheme } from "@mui/material";
 import { styled } from "@mui/system";
+import { Icon } from "@iconify/react"
 
 const LineBox = styled(Box)({
   justifyContent: "space-evenly",
@@ -31,6 +32,7 @@ const LeftSpan = styled(Typography)({
 })
 
 const AboutUs = ({ themeMode }) => {
+  const theme = useTheme()
   const is1000 = useMediaQuery("( mind-width: 1000px )");
   return (
     <>
@@ -38,9 +40,6 @@ const AboutUs = ({ themeMode }) => {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        sx={{
-          overflow: "scroll",
-        }}
       >
         <LineBox>
           <RowBox sx={{ margin: 2, marginTop: 0 }}>
@@ -56,6 +55,9 @@ const AboutUs = ({ themeMode }) => {
             <b>NOIR</b> she/her
             <br/>
             DJ & sales queen
+            <br />
+            <IconButton onClick={() => window.open("https://www.instagram.com/noirleona/", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
+            <IconButton onClick={() => window.open("https://soundcloud.com/leona-clayton", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
           </RowBox>
         </LineBox>
@@ -71,6 +73,10 @@ const AboutUs = ({ themeMode }) => {
             <b>JORDAN</b> he/him
             <br/>
             DJ & web developer
+            <br />
+            <IconButton onClick={() => window.open("https://www.instagram.com/kingjbradz/", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
+            <IconButton onClick={() => window.open("https://soundcloud.com/jbradztyo", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:soundcloud" color={theme.palette.brand.secondary} /></IconButton>
+            <IconButton onClick={() => window.open("https://www.mixcloud.com/jbradz/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:mixcloud" color={theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
           </RowBox>
           <RowBox sx={{ margin: 2}}>
@@ -92,7 +98,29 @@ const AboutUs = ({ themeMode }) => {
             <b>REBECCA</b> she/they
             <br/>
             not a DJ & creative director
+            <br/>
+            <IconButton onClick={() => window.open("https://www.instagram.com/miirjaa/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
+          </RowBox>
+        </LineBox>
+
+        <LineBox sx={{ flexDirection: !is1000 && "column-reverse" }}>
+          <RowBox>
+            <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+            I’m an interdisciplinary art director and 3D artist based in Berlin. Working in the field of visual communication with a strong focus on CGI and motion design, I‘m very happy to support DONE PROPERLY with my knowledge.
+            <br/>
+            </Typography>
+            <LeftSpan color="brand.secondary">
+            <br/>
+            <b>ANNA</b> she/her
+            <br/>
+            not a DJ & visual communication
+            <br/>
+            <IconButton onClick={() => window.open("https://www.instagram.com/annamialuisa/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
+            </LeftSpan>
+          </RowBox>
+          <RowBox sx={{ margin: 2 }}>
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/anna_dbpphoto.png" alt="rebecca" style={{ borderRadius: "10px" }}  />
           </RowBox>
         </LineBox>
       </Stack>
