@@ -74,7 +74,7 @@ const AboutUs = ({ themeMode }) => {
             prioritize those who are less privileged but everyone who respects
             our values is welcome: DJ newbies, DJs with skills to share, graphic
             designers, videographers, photographers who want to be part of a
-            community, etc.Shoot us a message to find out how you can get
+            community, etc. Shoot us a message to find out how you can get
             involved.
             <br />
             <br />
