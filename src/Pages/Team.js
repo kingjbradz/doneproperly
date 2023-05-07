@@ -20,20 +20,28 @@ const LineBox = styled(Box)({
 });
 
 const RowBox = styled(Box)({
-  textAlign: "center",
+  textAlign: "left",
   justifyContent: "center",
   alignItems: "center",
+  marginLeft: "8px"
 });
 
 const LeftSpan = styled(Typography)({
   textAlign: "left",
   fontSize: "14px",
-  marginLeft: "8px",
+})
+
+const RightSpan = styled(LeftSpan)({
+  "@media screen and (min-width: 1000px)": {
+    textAlign: "right",
+    fontSize: "14px",
+    marginLeft: 0
+  }
 })
 
 const AboutUs = ({ themeMode }) => {
   const theme = useTheme()
-  const is1000 = useMediaQuery("( mind-width: 1000px )");
+  const is1000 = useMediaQuery("( min-width: 1000px )");
   return (
     <>
       <Stack
@@ -63,21 +71,21 @@ const AboutUs = ({ themeMode }) => {
         </LineBox>
 
         <LineBox sx={{ flexDirection: !is1000 && "column-reverse" }}>
-          <RowBox>
+          <RowBox sx={{ textAlign: is1000 && "right", marginRight: is1000 && 1 }}>
             <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
             I‘m a DJ from Australia, recently arrived in Berlin after living in Tapei, Tokyo, and Vancouver. Lover of disco, techno, breaks, havin‘ a good ol yarn and bringing my years of experience to you.
             <br/>
             </Typography>
-            <LeftSpan color="brand.secondary">
+            <RightSpan color="brand.secondary">
             <br/>
             <b>JORDAN</b> he/him
             <br/>
-            DJ & web developer
+            DJ & tech dude
             <br />
             <IconButton onClick={() => window.open("https://www.instagram.com/kingjbradz/", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
             <IconButton onClick={() => window.open("https://soundcloud.com/jbradztyo", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:soundcloud" color={theme.palette.brand.secondary} /></IconButton>
             <IconButton onClick={() => window.open("https://www.mixcloud.com/jbradz/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:mixcloud" color={theme.palette.brand.secondary} /></IconButton>
-            </LeftSpan>
+            </RightSpan>
           </RowBox>
           <RowBox sx={{ margin: 2}}>
           <img src="https://d1g9ggdtg3kjm9.cloudfront.net/1.png" alt="jordan" style={{ borderRadius: "10px" }}  />
@@ -105,19 +113,19 @@ const AboutUs = ({ themeMode }) => {
         </LineBox>
 
         <LineBox sx={{ flexDirection: !is1000 && "column-reverse" }}>
-          <RowBox>
+          <RowBox sx={{ textAlign: is1000 && "right", marginRight: is1000 && 1 }}>
             <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
             I’m an interdisciplinary art director and 3D artist based in Berlin. Working in the field of visual communication with a strong focus on CGI and motion design, I‘m very happy to support DONE PROPERLY with my knowledge.
             <br/>
             </Typography>
-            <LeftSpan color="brand.secondary">
+            <RightSpan color="brand.secondary">
             <br/>
             <b>ANNA</b> she/her
             <br/>
             not a DJ & visual communication
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/annamialuisa/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
-            </LeftSpan>
+            </RightSpan>
           </RowBox>
           <RowBox sx={{ margin: 2 }}>
           <img src="https://d1g9ggdtg3kjm9.cloudfront.net/anna_dbpphoto.png" alt="rebecca" style={{ borderRadius: "10px" }}  />
