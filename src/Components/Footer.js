@@ -1,6 +1,11 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { styled } from "@mui/system"
 import Marquee from "react-fast-marquee";
+
+const A = styled("a")( ({ theme }) => ({
+  color: theme.palette.brand.primary
+}))
 
 const Footer = () => {
   const marginSpan = <span style={{marginRight:"40px"}}></span>
@@ -9,17 +14,17 @@ const Footer = () => {
       <Marquee gradient={false} speed={75} pauseOnHover={true}>
         <Typography 
             variant="h4" sx={{ color: "brand.primary", bgcolor: "brand.secondary", paddingLeft: 2, cursor: "pointer" }} onClick={() => window.location.href = "https://forms.gle/Ejmfsd2Zr68om7sR8" }>
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
-            SIGN UP FOR OUR WORKSHOP ON JUNE 3RD! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
         </Typography>
       </Marquee>
     </Box>
