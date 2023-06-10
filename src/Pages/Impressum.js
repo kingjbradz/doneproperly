@@ -31,7 +31,7 @@ const Impressum = () => {
         </SpaceBetweenBox>
         <SpaceBetweenBox>
             <Typography>Email</Typography>
-            <Typography>hidoneproperly@gmail.com</Typography>
+            <Typography>hi@doneproperly.berlin</Typography>
         </SpaceBetweenBox>
             </Box> 
        </Container>

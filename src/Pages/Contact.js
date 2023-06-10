@@ -90,7 +90,7 @@ const Contact = ({ themeMode }) => {
       <Typography sx={{ fontSize: "12px", textAlign: "center" }} >
         You can also reach us at:
         <br/>
-        hidoneproperly@gmail.com
+        hi@doneproperly.berlin
       </Typography>
         <br/>
     </Container>
