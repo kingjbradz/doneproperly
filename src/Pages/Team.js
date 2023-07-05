@@ -62,7 +62,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>NOIR</b> she/her
             <br/>
-            founder, DJ & marketing queen
+            founder & DJ
             <br />
             <IconButton onClick={() => window.open("https://www.instagram.com/noirleona/", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
             <IconButton onClick={() => window.open("https://soundcloud.com/leona-clayton", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={theme.palette.brand.secondary} /></IconButton>
@@ -105,7 +105,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>REBECCA</b> she/they
             <br/>
-            co-founder, not a DJ & creative director
+            co-founder, not a DJ & creative manager
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/miirjaa/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
