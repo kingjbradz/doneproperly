@@ -7,7 +7,6 @@ const SocialLinks = () => {
     return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
         <IconButton onClick={() => window.open("https://www.instagram.com/doneproperlyberlin/", "_blank")}><Icon icon="mdi:instagram" color={theme.palette.brand.primary} /></IconButton>
-        <IconButton onClick={() => window.open("https://www.tiktok.com/@done_properly", "_blank")}><Icon icon="ic:baseline-tiktok" color={theme.palette.brand.primary} /></IconButton>
         <IconButton onClick={() => window.open("https://soundcloud.com/doneproperlyberlin", "_blank")}><Icon icon="mdi:soundcloud" color={theme.palette.brand.primary} /></IconButton>
     </Box>
     )
