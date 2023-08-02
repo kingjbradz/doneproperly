@@ -131,6 +131,26 @@ const AboutUs = ({ themeMode }) => {
           <img src="https://d1g9ggdtg3kjm9.cloudfront.net/anna_dbpphoto.png" alt="rebecca" style={{ borderRadius: "10px" }}  />
           </RowBox>
         </LineBox>
+
+        <LineBox>
+          <RowBox sx={{ margin: 2 }}>
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/jimmy_dpbphoto.png" alt="rebecca" style={{ borderRadius: "10px" }}  />
+          </RowBox>
+          <RowBox>
+            <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+            Escaping the mediocrity of the corporate US EDM hellscape, I came to Berlin to find fellowship amongst likeminded people. This is exactly why I joined DP to not just integrate within the community but make a difference within the music scene locally and globally.
+            <br/>
+            </Typography>
+            <LeftSpan color="brand.secondary">
+            <br/>
+            <b>JIMMY</b> he/they
+            <br/>
+            DJ & team member
+            <br/>
+            <IconButton onClick={() => window.open("https://www.instagram.com/general_whatever", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={theme.palette.brand.secondary} /></IconButton>
+            </LeftSpan>
+          </RowBox>
+        </LineBox>
       </Stack>
     </>
   );
