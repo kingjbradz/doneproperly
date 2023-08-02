@@ -14,17 +14,17 @@ const Footer = () => {
       <Marquee gradient={false} speed={75} pauseOnHover={true}>
         <Typography 
             variant="h4" sx={{ color: "brand.primary", bgcolor: "brand.secondary", paddingLeft: 2, cursor: "pointer" }} onClick={() => window.location.href = "https://forms.gle/Ejmfsd2Zr68om7sR8" }>
-            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            COME TO OUR NEXT EVENT ON <A href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan}
             SIGN UP FOR <A href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            COME TO OUR NEXT EVENT ON <A href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan}
             SIGN UP FOR <A href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            COME TO OUR NEXT EVENT ON <A href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan}
             SIGN UP FOR <A href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            COME TO OUR NEXT EVENT ON <A href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan}
             SIGN UP FOR <A href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            COME TO OUR NEXT EVENT ON <A href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan}
             SIGN UP FOR <A href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            NEXT EVENT COMING UP SOON - STAY UP TO DATE ON <A href="https://instagram.com/doneproperlyberlin">INSTAGRAM</A>! {marginSpan}
+            COME TO OUR NEXT EVENT ON <A href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan}
         </Typography>
       </Marquee>
     </Box>
