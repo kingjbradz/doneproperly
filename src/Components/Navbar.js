@@ -22,6 +22,7 @@ const navItems = [
   { text: "Team", path: "/team" },
   { text: "Events", path: "/events" },
   { text: "Contact", path: "/contact" },
+  { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" },
   { text: "Impressum", path: "/impressum" },
 ];
 
@@ -65,7 +66,12 @@ const Navbar = ({ themeMode, setThemeMode }) => {
                   return (
                     <React.Fragment key={text}>
                       <Button
-                        onClick={() => navigate(path)}
+                        onClick={() => 
+                          path.includes("https") ? 
+                          window.open(path, "_blank")
+                          : 
+                          navigate(path)
+                          }
                         sx={{
                           color:
                             path === location.pathname
