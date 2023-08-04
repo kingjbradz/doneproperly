@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact";
 import Impressum from "../Pages/Impressum";
 import App404 from "../Pages/App404";
 import Team from "../Pages/Team";
+import Events from "../Pages/Events"
 import NewsletterSignup from "../Pages/NewsletterSignup";
 
 const Router = ({ themeMode }) => {
@@ -22,6 +23,7 @@ const Router = ({ themeMode }) => {
         <Route path="/contact" element={<Contact themeMode={themeMode} />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/newsletter" element={<NewsletterSignup />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/*" element={<App404 />} />
       </Routes>
     </Box>
