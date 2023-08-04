@@ -8,6 +8,8 @@ const SocialLinks = () => {
     <Box sx={{ display: "flex", justifyContent: "center" }}>
         <IconButton onClick={() => window.open("https://www.instagram.com/doneproperlyberlin/", "_blank")}><Icon icon="mdi:instagram" color={theme.palette.brand.primary} /></IconButton>
         <IconButton onClick={() => window.open("https://soundcloud.com/doneproperlyberlin", "_blank")}><Icon icon="mdi:soundcloud" color={theme.palette.brand.primary} /></IconButton>
+        <IconButton onClick={() => window.open("https://t.me/doneproperlyberlin", "_blank")}><Icon icon="mdi:telegram" color={theme.palette.brand.primary} /></IconButton>
+        <IconButton onClick={() => window.open("http://doneproperly.berlin/newsletter", "_blank")}><Icon icon="uiw:mail" color={theme.palette.brand.primary} /></IconButton>
     </Box>
     )
 }
