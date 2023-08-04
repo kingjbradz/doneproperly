@@ -1,11 +1,11 @@
 import React from "react"
-import { Box, useMediaQuery } from "@mui/material"
+import { Box, useMediaQuery, Typography } from "@mui/material"
 
 const Events = () => {
     const is430 = useMediaQuery(" ( min-width: 430px ) ")
     return (
         <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
-            <h2 style={{ marginTop: 0 }}>Upcoming Events</h2>
+            <Typography variant="h4" sx={{ marginTop: 0, marginBottom: 2, color: "brand.secondary" }}>Upcoming Events</Typography>
             <Box sx={{ display: "flex", justifyContent: "center", marginBottom: 2 }}>
                 <img
                     alt="event flyer" 
