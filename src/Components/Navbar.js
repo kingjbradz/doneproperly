@@ -20,9 +20,9 @@ const navItems = [
   { text: "Home", path: "/" },
   { text: "About", path: "/about" },
   { text: "Team", path: "/team" },
+  { text: "Events", path: "/events" },
   { text: "Contact", path: "/contact" },
   { text: "Impressum", path: "/impressum" },
-  { text: "Events", path: "/events" },
 ];
 
 const Navbar = ({ themeMode, setThemeMode }) => {
