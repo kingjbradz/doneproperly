@@ -27,7 +27,7 @@ const navItems = [
   { text: "Impressum", path: "/impressum" },
 ];
 
-const Navbar = ({ themeMode, setThemeMode }) => {
+const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
   const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
@@ -124,7 +124,8 @@ const Navbar = ({ themeMode, setThemeMode }) => {
           {isMD && <SocialLinks /> }
         </Toolbar>
       </AppBar>
-      <DonePropImg themeMode={themeMode} />
+      <DonePropImg themeMode={themeMode} noShow={noShow} />
+      {console.log(noShow)}
     </Box>
   );
 };
