@@ -23,14 +23,15 @@ const navItems = [
   { text: "Events", path: "/events" },
   { text: "Contact", path: "/contact" },
   { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" },
+  { text: "Listen", path: "/listen" },
   { text: "Impressum", path: "/impressum" },
 ];
 
-const Navbar = ({ themeMode, setThemeMode }) => {
+const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
   const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
-  const isMD = useMediaQuery(" (min-width: 900px) ");
+  const isMD = useMediaQuery(" (min-width: 950px) ");
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
   const handleMode = () => {
@@ -123,7 +124,7 @@ const Navbar = ({ themeMode, setThemeMode }) => {
           {isMD && <SocialLinks /> }
         </Toolbar>
       </AppBar>
-      <DonePropImg themeMode={themeMode} />
+      <DonePropImg themeMode={themeMode} noShow={noShow} />
     </Box>
   );
 };
