@@ -125,7 +125,6 @@ const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
         </Toolbar>
       </AppBar>
       <DonePropImg themeMode={themeMode} noShow={noShow} />
-      {console.log(noShow)}
     </Box>
   );
 };

@@ -28,7 +28,6 @@ const Listen = ({ noShow, setNoShow, themeMode }) => {
               <PlaylistButton themeMode={themeMode} color={pl.color} numberSet={() => setState({ color: pl.color, number: pl.number})} shadow={state.color === pl.color && true} />
             )
           })}
-{          console.log("color", state)}
           </Box>
         <Box sx={{ width: "90%", height: "85%" }}>
           <iframe 
