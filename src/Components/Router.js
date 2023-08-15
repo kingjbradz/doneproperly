@@ -16,7 +16,7 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
   const location = useLocation()
   return (
     <Box sx={{ 
-      height: location.pathname === "/" ? "100%" : "auto", 
+      height: location.pathname === "/" ? "100%" : location.pathname === "/listen" ? "100%" : "auto", 
       paddingTop: location.pathname === "/" && "64px"  }}>
       <Routes>
         <Route path="/" element={<Home noShow={setNoShow(false)} themeMode={themeMode} />}  />

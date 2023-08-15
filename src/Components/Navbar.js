@@ -31,7 +31,7 @@ const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
   const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
-  const isMD = useMediaQuery(" (min-width: 900px) ");
+  const isMD = useMediaQuery(" (min-width: 950px) ");
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
   const handleMode = () => {
