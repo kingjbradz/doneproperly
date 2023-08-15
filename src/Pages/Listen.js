@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Box } from "@mui/material"
 import { PlaylistButton } from '../Components/Elements'
 
-const Listen = ({ noShow, setNoShow }) => {
+const Listen = ({ noShow, setNoShow, themeMode }) => {
   const [state, setState] = useState({
     color: "brown",
     number: "1641758563",
@@ -25,7 +25,7 @@ const Listen = ({ noShow, setNoShow }) => {
         <Box sx={{ textAlign: "center", margin: "8px 0" }}>
         {playlists.map((pl) => {
           return (
-              <PlaylistButton color={pl.color} numberSet={() => setState({ color: pl.color, number: pl.number})} shadow={state.color === pl.color && true} />
+              <PlaylistButton themeMode={themeMode} color={pl.color} numberSet={() => setState({ color: pl.color, number: pl.number})} shadow={state.color === pl.color && true} />
             )
           })}
 {          console.log("color", state)}
