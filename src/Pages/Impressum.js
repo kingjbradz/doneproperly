@@ -27,7 +27,7 @@ const Impressum = () => {
         </SpaceBetweenBox>
         <SpaceBetweenBox>
             <Typography>Address</Typography>
-            <Typography>Koppenstraße 43, 10243 Berlin</Typography>
+            <Typography>Sonnenallee 92, 12045 Berlin</Typography>
         </SpaceBetweenBox>
         <SpaceBetweenBox>
             <Typography>Email</Typography>

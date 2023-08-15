@@ -8,6 +8,7 @@ import Router from "./Components/Router";
 
 function App() {
   const [themeMode, setThemeMode] = useState(false)
+  const [noShow, setNoShow] = useState(false)
   return ( 
     <ThemeProvider theme={!themeMode ? lightTheme : darkTheme}>
       <Box
@@ -18,8 +19,8 @@ function App() {
           height: "100%",
         }}
       >
-        <Navbar themeMode={themeMode} setThemeMode={setThemeMode} />
-        <Router themeMode={themeMode} />
+        <Navbar themeMode={themeMode} setThemeMode={setThemeMode} noShow={noShow} setNoShow={setNoShow} />
+        <Router themeMode={themeMode} noShow={noShow} setNoShow={setNoShow} />
         <Footer />
       </Box>
     </ThemeProvider>

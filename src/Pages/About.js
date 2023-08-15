@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, useMediaQuery, Stack } from "@mui/material";
+import { Box, Typography, useMediaQuery, Stack, Link } from "@mui/material";
 import { styled } from "@mui/system";
 
 const LineBox = styled(Box)({
@@ -75,7 +75,7 @@ const AboutUs = ({ themeMode }) => {
             our values is welcome: DJ newbies, DJs with skills to share, graphic
             designers, videographers, photographers who want to be part of a
             community, etc. Shoot us a message to find out how you can get
-            involved.
+            involved  or click <Link href="https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" target="_blank"><u>here</u></Link>.
             <br />
             <br />
             We’re trying to build a community where you belong: the loner, the

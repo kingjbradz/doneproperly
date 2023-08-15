@@ -22,6 +22,9 @@ const Sidebar = ({
   };
 
   const handleMobileRoute = (v) => {
+    v.includes("https") ? 
+    window.open(v, "_blank")
+    :
     navigate(v)
     setSidebarOpen(false)
   }
