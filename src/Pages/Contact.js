@@ -87,7 +87,7 @@ const Contact = ({ themeMode }) => {
           </Button>
       </form>
         <br/>
-      <Typography sx={{ fontSize: "12px", textAlign: "center" }} >
+      <Typography sx={{ color: "brand.secondary", fontSize: "12px", textAlign: "center" }} >
         You can also reach us at:
         <br/>
         hi@doneproperly.berlin
