@@ -19,7 +19,24 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
       height: location.pathname === "/" ? "100%" : location.pathname === "/listen" ? "100%" : "auto", 
       paddingTop: location.pathname === "/" && "64px",
       flexGrow: "1",
-      overflow: "auto"
+      overflow: "auto",
+      "-ms-overflow-style": "none", /* Hide scrollbars - IE and Edge */
+      "scrollbar-width": "none",  /* Hide scrollbars - Firefox */
+      "::-webkit-scrollbar": {
+        width: "8px",
+        marginLeft: "0.5rem",
+      },
+      "::-webkit-scrollbar-track": {
+        boxShadow: "none",
+        background: "none",
+        border: "none"
+      },
+      "::-webkit-scrollbar-thumb": {
+       background: (theme) =>  theme.palette.brand.secondary,
+       borderRadius: "8px",
+       backgroundClip: "padding-box",
+       borderRight: "0.75px white solid",
+      }
       }}>
       <Routes>
         <Route path="/" element={<Home noShow={setNoShow(false)} themeMode={themeMode} />}  />
