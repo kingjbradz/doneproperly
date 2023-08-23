@@ -7,7 +7,7 @@ import Contact from "../Pages/Contact";
 import Impressum from "../Pages/Impressum";
 import App404 from "../Pages/App404";
 import Team from "../Pages/Team";
-import Events from "../Pages/Events"
+// import Events from "../Pages/Events"
 import NewsletterSignup from "../Pages/NewsletterSignup";
 import Listen from "../Pages/Listen";
 
@@ -17,12 +17,15 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
   return (
     <Box sx={{ 
       height: location.pathname === "/" ? "100%" : location.pathname === "/listen" ? "100%" : "auto", 
-      paddingTop: location.pathname === "/" && "64px"  }}>
+      paddingTop: location.pathname === "/" && "64px",
+      flexGrow: "1",
+      overflow: "auto"
+      }}>
       <Routes>
         <Route path="/" element={<Home noShow={setNoShow(false)} themeMode={themeMode} />}  />
         <Route path="/about" element={<About noShow={setNoShow(false)} themeMode={themeMode} />} />
         <Route path="/team" element={<Team noShow={setNoShow(false)} themeMode={themeMode} />} />
-        <Route path="/events" element={<Events noShow={setNoShow(false)} themeMode={themeMode} />} />
+        {/* <Route path="/events" element={<Events noShow={setNoShow(false)} themeMode={themeMode} />} /> */}
         <Route path="/contact" element={<Contact noShow={setNoShow(false)} themeMode={themeMode} />} />
         <Route path="/impressum" element={<Impressum noShow={setNoShow(false)} themeMode={themeMode} />} />
         <Route path="/newsletter" element={<NewsletterSignup noShow={setNoShow(false)} themeMode={themeMode} />} />

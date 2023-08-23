@@ -20,7 +20,7 @@ const navItems = [
   { text: "Home", path: "/" },
   { text: "About", path: "/about" },
   { text: "Team", path: "/team" },
-  { text: "Events", path: "/events" },
+  // { text: "Events", path: "/events" },
   { text: "Contact", path: "/contact" },
   { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" },
   { text: "Listen", path: "/listen" },
@@ -43,7 +43,7 @@ const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
   };
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
+    <Box sx={{ display: "flex", justifyContent: "center", flexShrink: "0" }}>
       <CssBaseline />
       <AppBar sx={{ bgcolor: "brand.secondary", boxShadow: 0 }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
