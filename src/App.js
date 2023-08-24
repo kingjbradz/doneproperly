@@ -20,8 +20,10 @@ function App() {
         }}
       >
         <Navbar themeMode={themeMode} setThemeMode={setThemeMode} noShow={noShow} setNoShow={setNoShow} />
-        <Router themeMode={themeMode} noShow={noShow} setNoShow={setNoShow} />
-        <Footer />
+        <Router themeMode={themeMode} noShow={noShow} setNoShow={setNoShow} />   
+        <Box sx={{ paddingBottom: 1, bgcolor: "brand.primary" }}>
+          <Footer />
+        </Box>
       </Box>
     </ThemeProvider>
   );
