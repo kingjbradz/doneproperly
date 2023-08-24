@@ -104,6 +104,22 @@ const AboutUs = ({ themeMode }) => {
             </Typography>
           </RowBox>
         </LineBox>
+
+        <LineBox sx={{ flexDirection: !is1000 && "column-reverse" }}>
+          <RowBox>
+            <Typography
+              variant="h4"
+              sx={{
+                color: "brand.secondary",
+                marginLeft: 2,
+                width: is750 ? 500 : "auto",
+                marginTop: !is1000 && 2,
+              }}
+            >
+              TEAM
+            </Typography>
+          </RowBox>
+        </LineBox>
       </Stack>
     </>
   );

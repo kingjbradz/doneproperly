@@ -19,12 +19,10 @@ import DonePropImg from "./DonePropImg";
 const navItems = [
   { text: "Home", path: "/" },
   { text: "About", path: "/about" },
-  { text: "Team", path: "/team" },
   // { text: "Events", path: "/events" },
-  { text: "Contact", path: "/contact" },
-  { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" },
   { text: "Listen", path: "/listen" },
-  { text: "Impressum", path: "/impressum" },
+  { text: "Contact", path: "/contact" },
+  { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" }
 ];
 
 const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
