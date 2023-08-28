@@ -51,7 +51,7 @@ const AboutUs = ({ themeMode }) => {
       >
         <LineBox>
           <RowBox sx={{ margin: 2, marginTop: 0 }}>
-            <img src="https://d1g9ggdtg3kjm9.cloudfront.net/2.png" alt="noir" style={{ borderRadius: "10px" }} />
+            <img src="https://d1g9ggdtg3kjm9.cloudfront.net/2.png" alt="noir" style={{ borderRadius: "10pX", width: "100%" }} />
           </RowBox>
           <RowBox>
             <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
@@ -88,13 +88,13 @@ const AboutUs = ({ themeMode }) => {
             </RightSpan>
           </RowBox>
           <RowBox sx={{ margin: 2}}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/1.png" alt="jordan" style={{ borderRadius: "10px" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/1.png" alt="jordan" style={{ borderRadius: "10pX", width: "100%" }}  />
           </RowBox>
         </LineBox>
 
         <LineBox>
           <RowBox sx={{ margin: 2 }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/3.png" alt="rebecca" style={{ borderRadius: "10px" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/3.png" alt="rebecca" style={{ borderRadius: "10pX", width: "100%" }}  />
           </RowBox>
           <RowBox>
             <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
@@ -128,13 +128,13 @@ const AboutUs = ({ themeMode }) => {
             </RightSpan>
           </RowBox>
           <RowBox sx={{ margin: 2 }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/anna_dbpphoto.png" alt="rebecca" style={{ borderRadius: "10px" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/anna_dbpphoto.png" alt="rebecca" style={{ borderRadius: "10pX", width: "100%" }}  />
           </RowBox>
         </LineBox>
 
         <LineBox>
           <RowBox sx={{ margin: 2 }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/jimmy_dpbphoto.png" alt="rebecca" style={{ borderRadius: "10px" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/jimmy_dpbphoto.png" alt="rebecca" style={{ borderRadius: "10pX", width: "100%" }}  />
           </RowBox>
           <RowBox>
             <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
