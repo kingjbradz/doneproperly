@@ -5,7 +5,7 @@ import AboutContainer from "../Pages/AboutContainer";
 import Home from "../Pages/Home";
 import ContactContainer from "../Pages/ContactContainer";
 import App404 from "../Pages/App404";
-// import Events from "../Pages/Events"
+import EventsContainer from "../Pages/EventsContainer"
 import NewsletterSignup from "../Pages/NewsletterSignup";
 import Listen from "../Pages/Listen";
 
@@ -53,7 +53,7 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
             <AboutContainer noShow={setNoShow(false)} themeMode={themeMode} />
           }
         />
-        {/* <Route path="/events" element={<Events noShow={setNoShow(false)} themeMode={themeMode} />} /> */}
+        {/* <Route path="/events" element={<EventsContainer noShow={noShow} setNoShow={setNoShow} themeMode={themeMode} />} /> */}
         <Route
           path="/contact"
           element={<ContactContainer noShow={setNoShow(false)} themeMode={themeMode} />}
