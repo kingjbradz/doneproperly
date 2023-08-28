@@ -53,7 +53,7 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
             <AboutContainer noShow={setNoShow(false)} themeMode={themeMode} />
           }
         />
-        {/* <Route path="/events" element={<EventsContainer noShow={noShow} setNoShow={setNoShow} themeMode={themeMode} />} /> */}
+        <Route path="/events" element={<EventsContainer noShow={noShow} setNoShow={setNoShow} themeMode={themeMode} />} />
         <Route
           path="/contact"
           element={<ContactContainer noShow={setNoShow(false)} themeMode={themeMode} />}
