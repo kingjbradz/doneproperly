@@ -3,7 +3,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Box } from "@mui/material";
 import AboutContainer from "../Pages/AboutContainer";
 import Home from "../Pages/Home";
-import ContactContainer from "../Pages/ContactContainer";
+import Contact from "../Pages/Contact";
+import Impressum from "../Pages/Impressum";
 import App404 from "../Pages/App404";
 import EventsContainer from "../Pages/EventsContainer"
 import NewsletterSignup from "../Pages/NewsletterSignup";
@@ -14,6 +15,7 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
   return (
     <Box
       sx={{
+        margin: "8px 0",
         height:
           location.pathname === "/"
             ? "100%"
@@ -56,7 +58,11 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
         <Route path="/events" element={<EventsContainer noShow={noShow} setNoShow={setNoShow} themeMode={themeMode} />} />
         <Route
           path="/contact"
-          element={<ContactContainer noShow={setNoShow(false)} themeMode={themeMode} />}
+          element={<Contact noShow={setNoShow(false)} themeMode={themeMode} />}
+        />
+        <Route
+          path="/impressum"
+          element={<Impressum noShow={setNoShow(false)} themeMode={themeMode} />}
         />
         <Route
           path="/newsletter"

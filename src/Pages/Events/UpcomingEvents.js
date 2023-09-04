@@ -6,7 +6,7 @@ const UpcomingEvents = ({ themeMode }) => {
     const [eventsTab, setEventsTab] = React.useState(1)
     return (
         <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
-          Upcoming Events
+          placeholder
         </Box>
     )
 }
