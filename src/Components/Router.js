@@ -15,7 +15,6 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
   return (
     <Box
       sx={{
-        margin: "8px 0",
         height:
           location.pathname === "/"
             ? "100%"

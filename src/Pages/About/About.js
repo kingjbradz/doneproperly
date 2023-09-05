@@ -1,25 +1,6 @@
 import React from "react";
-import { Box, Typography, useMediaQuery, Stack, Link } from "@mui/material";
-import { styled } from "@mui/system";
-
-const LineBox = styled(Box)({
-  justifyContent: "space-evenly",
-  color: "brand.secondary",
-  padding: "16px",
-  flexDirection: "column",
-  display: "flex",
-  alignItems: "center",
-  marginBottom: "24px",
-  "@media screen and (min-width: 750px)": {
-    padding: "0 3em",
-  },
-});
-
-const RowBox = styled(Box)({
-  textAlign: "center",
-  justifyContent: "center",
-  alignItems: "center",
-});
+import { Typography, useMediaQuery, Stack, Link } from "@mui/material";
+import { LineBox, RowBox } from "../../Components/Elements";
 
 const AboutUs = ({ themeMode }) => {
   const is750 = useMediaQuery("( min-width: 750px )");
@@ -30,27 +11,10 @@ const AboutUs = ({ themeMode }) => {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        sx={{
-          // maxHeight: `calc(${window.innerHeight}px - 100px)`,
-          // overflow: "scroll",
-        }}
       >
-        <LineBox>
+        <LineBox sx={{ flexDirection: !is1000 && "column-reverse" }}>
           <RowBox>
-            <Typography
-              variant="h4"
-              sx={{
-                color: "brand.secondary",
-                marginRight: 2,
-                width: is750 ? 500 : "auto",
-                marginBottom: !is1000 && 2,
-              }}
-            >
-              BRINGING MUSIC BACK TO THE PEOPLE
-            </Typography>
-          </RowBox>
-          <RowBox>
-            <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+            <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "730px !important" }}>
               We believe music belongs to everyone and everyone belongs to
               music. We want to bring opportunities, skill and knowledge to
               anyone who might struggle to find resources and a community to
@@ -64,11 +28,22 @@ const AboutUs = ({ themeMode }) => {
               involved in DONE PROPERLY.
             </Typography>
           </RowBox>
+          <RowBox>
+            <Typography
+              variant="h4"
+              sx={{
+                color: "brand.secondary",
+                width: is750 ? 750 : "auto",
+                marginBottom: !is1000 && 2,
+              }}
+            >
+              BRINGING MUSIC BACK TO THE PEOPLE
+            </Typography>
+          </RowBox>
         </LineBox>
-
         <LineBox sx={{ flexDirection: !is1000 && "column-reverse" }}>
           <RowBox>
-            <Typography sx={{color:"brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+            <Typography sx={{ color:"brand.secondary",fontSize:"14px", maxWidth: "730px !important" }}>
 
             We’re an LGBTQIA+, BIPOC and FLINTA* friendly space. We’ll always
             prioritize those who are less privileged but everyone who respects
@@ -95,28 +70,11 @@ const AboutUs = ({ themeMode }) => {
               variant="h4"
               sx={{
                 color: "brand.secondary",
-                marginLeft: 2,
-                width: is750 ? 500 : "auto",
+                width: is750 ? 750 : "auto",
                 marginBottom: !is1000 && 2,
               }}
             >
               BUILDING A COMMUNITY
-            </Typography>
-          </RowBox>
-        </LineBox>
-
-        <LineBox sx={{ flexDirection: !is1000 && "column-reverse" }}>
-          <RowBox>
-            <Typography
-              variant="h4"
-              sx={{
-                color: "brand.secondary",
-                marginLeft: 2,
-                width: is750 ? 500 : "auto",
-                marginTop: !is1000 && 2,
-              }}
-            >
-              TEAM
             </Typography>
           </RowBox>
         </LineBox>
