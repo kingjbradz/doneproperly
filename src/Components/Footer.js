@@ -14,21 +14,17 @@ const Footer = () => {
       <Marquee gradient={false} speed={75} pauseOnHover={true}>
         <Typography 
             variant="h4" sx={{ color: "brand.primary", bgcolor: "brand.secondary", paddingLeft: 2, cursor: "pointer" }}>
-            {/* COME TO OUR NEXT EVENT ON <A target="_blank" href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan} */}
+            REGISTER FOR OUR NEXT WORKSHOP ON <A target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform">OCTOBER 14</A>! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            {/* COME TO OUR NEXT EVENT ON <A target="_blank" href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan} */}
+            REGISTER FOR OUR NEXT WORKSHOP ON <A target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform">OCTOBER 14</A>! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            {/* COME TO OUR NEXT EVENT ON <A target="_blank" href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan} */}
+            REGISTER FOR OUR NEXT WORKSHOP ON <A target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform">OCTOBER 14</A>! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            {/* COME TO OUR NEXT EVENT ON <A target="_blank" href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan} */}
+            REGISTER FOR OUR NEXT WORKSHOP ON <A target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform">OCTOBER 14</A>! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            {/* COME TO OUR NEXT EVENT ON <A target="_blank" href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan} */}
+            REGISTER FOR OUR NEXT WORKSHOP ON <A target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform">OCTOBER 14</A>! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            {/* COME TO OUR NEXT EVENT ON <A target="_blank" href="https://ra.co/events/1743769">AUGUST 18</A>! {marginSpan} */}
-            SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
-            SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
+            REGISTER FOR OUR NEXT WORKSHOP ON <A target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform">OCTOBER 14</A>! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
         </Typography>
       </Marquee>
