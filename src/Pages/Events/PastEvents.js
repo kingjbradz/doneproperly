@@ -7,7 +7,7 @@ const PastEvents = ({ themeMode }) => {
     const is1020 = useMediaQuery(" ( min-width: 1020px ) ")
 
     return (
-      <Grid container sx={{ display: "flex", justifyContent: "center", flexDirection: is520 ? "row" : "column", alignItems: "center" }}>
+      <Grid container sx={{ display: "flex", justifyContent: "center", flexDirection: is520 ? "row" : "column", alignItems: "center", marginTop: "1em" }}>
       {EventObjects.map((e, index) => (
         <>
       <Box sx={{ maxWidth: !is520 ? "90%" : "500px", marginBottom: 2, marginRight: is1020 && 2  }}>
