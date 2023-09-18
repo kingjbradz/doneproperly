@@ -1,5 +1,12 @@
 export const EventObjects = [
   {
+    id: 4,
+    name: "It's a Workshop",
+    date: "14/10/2023",
+    img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/its_a_workshop.jpg",
+    insta: ""
+  },
+  {
     id: 3,
     name: "Oh No, Disco",
     date: "18/08/2023",
