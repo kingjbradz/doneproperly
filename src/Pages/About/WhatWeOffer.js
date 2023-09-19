@@ -13,7 +13,7 @@ const WhatWeOffer = ({ themeMode }) => {
         <RowBox>
           <Typography
             sx={{
-              color: themeMode ? "brand.secondary" : "brand.primary",
+              color: themeMode ? "brand.primary" : "brand.secondary",
               fontSize: "14px",
               maxWidth: "730px !important"
             }}
