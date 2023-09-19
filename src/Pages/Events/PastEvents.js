@@ -12,8 +12,8 @@ const PastEvents = ({ themeMode }) => {
         <>
       <Box sx={{ maxWidth: !is520 ? "90%" : "500px", marginBottom: 2, marginRight: is1020 && 2  }}>
         <img src={e.img} alt={e.name} style={{ width: "100%", cursor: "pointer", marginBottom: "8px" }} onClick={() => window.open(e.insta, "_blank")}  />
-        <Typography>{e.name}</Typography>
-        <Typography>{e.date}</Typography>
+        <Typography sx={{ color: themeMode ? "brand.primary" : "brand.secondary" }}>{e.name}</Typography>
+        <Typography sx={{ color: themeMode ? "brand.primary" : "brand.secondary" }}>{e.date}</Typography>
        </Box>
           </>
       ))}
