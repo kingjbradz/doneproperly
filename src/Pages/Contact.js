@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Typography, TextField, Button, useMediaQuery } from "@mui/material";
-import { Container } from "../../Components/Elements";
+import { Container } from "../Components/Elements";
 import { styled } from "@mui/system";
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
@@ -20,7 +20,7 @@ const Contact = ({ themeMode }) => {
     );
   }
   return (
-    <Container sx={{ flexDirection: "column" }}>
+    <Container sx={{ flexDirection: "column", height: "100%" }}>
       <form
         onSubmit={handleSubmit}
         style={{
@@ -29,8 +29,11 @@ const Contact = ({ themeMode }) => {
           textAlign: "center",
           minWidth: is600 ? "575px" : "100%",
           padding: "8px",
+          height: "100%",
+          justifyContent: "center"
         }}
       >
+        
         <StyledTextField
           id="name"
           type="name"
@@ -115,13 +118,13 @@ const Contact = ({ themeMode }) => {
         </Button>
       </form>
       <br />
-      {/* <Typography
+      <Typography
         sx={{ color: "brand.secondary", fontSize: "12px", textAlign: "center" }}
       >
         You can also reach us at:
         <br />
         hi@doneproperly.berlin
-      </Typography> */}
+      </Typography>
       <br />
     </Container>
   );

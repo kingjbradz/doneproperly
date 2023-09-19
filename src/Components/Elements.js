@@ -37,3 +37,18 @@ export const PlaylistButton = ({ color, numberSet, shadow, themeMode  }) => {
         </IconButton>
   )
 }
+
+export const LineBox = styled(Box)( ({ theme }) => ({
+  justifyContent: "space-evenly",
+  padding: "16px",
+  flexDirection: "column",
+  display: "flex",
+  alignItems: "flex-start",
+  marginBottom: "24px",
+}));
+
+export const RowBox = styled(Box)({
+  textAlign: "left",
+  justifyContent: "center",
+  alignItems: "center",
+});
