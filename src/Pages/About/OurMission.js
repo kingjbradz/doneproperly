@@ -12,7 +12,7 @@ const OurMission = ({ themeMode }) => {
         <RowBox>
           <Typography
             sx={{
-              color: "brand.secondary",
+              color: themeMode ? "brand.primary" : "brand.secondary",
               fontSize: "14px",
               maxWidth: "730px !important"
             }}
