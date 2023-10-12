@@ -42,8 +42,8 @@ const AboutUs = ({ themeMode }) => {
         alignItems="center"
       >
         <LineBox>
-          <RowBox sx={{ margin: 2, marginTop: 0, maxWidth: "230px" }}>
-            <img src="https://d1g9ggdtg3kjm9.cloudfront.net/2.png" alt="noir" style={{  width: "100%" }} />
+          <RowBox sx={{ margin: 2, marginTop: 2, maxWidth: "230px" }}>
+            <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/noir_dpbphoto.png" alt="noir" style={{  width: "100%" }} />
           </RowBox>
           <RowBox>
             <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
@@ -64,7 +64,7 @@ const AboutUs = ({ themeMode }) => {
 
         <LineBox>
           <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/1.png" alt="jordan" style={{  width: "100%" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/jordan_dpbphoto.png" alt="jordan" style={{  width: "100%" }}  />
           </RowBox>
           <RowBox>
             <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
@@ -86,7 +86,7 @@ const AboutUs = ({ themeMode }) => {
 
         <LineBox>
           <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/3.png" alt="rebecca" style={{  width: "100%" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/rebecca_dpbphoto.png" alt="rebecca" style={{  width: "100%" }}  />
           </RowBox>
           <RowBox>
             <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
@@ -106,7 +106,7 @@ const AboutUs = ({ themeMode }) => {
 
         <LineBox>
           <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/anna_dbpphoto.png" alt="rebecca" style={{  width: "100%" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/anna_dbpphoto.png" alt="anna" style={{  width: "100%" }}  />
           </RowBox>
           <RowBox>
             <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
@@ -126,7 +126,7 @@ const AboutUs = ({ themeMode }) => {
 
         <LineBox>
           <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/jimmy_dpbphoto.png" alt="rebecca" style={{  width: "100%" }}  />
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/jimmy_dpbphoto.png" alt="jimmy" style={{  width: "100%" }}  />
           </RowBox>
           <RowBox>
             <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
@@ -143,6 +143,49 @@ const AboutUs = ({ themeMode }) => {
             </LeftSpan>
           </RowBox>
         </LineBox>
+
+        <LineBox>
+          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/pep_dpbphoto.png" alt="pepijn" style={{  width: "100%" }}  />
+          </RowBox>
+          <RowBox>
+            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+            Creative toolkit based in Rotterdam, including: Bright colors, flashy shapes, rose-tinted glasses and hint of glitter. Here to help people connect with the mixture of music and other forms of art.
+            <br/>
+            </Typography>
+            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
+            <br/>
+            <b>PEPIJN</b> he/they
+            <br/>
+            not a DJ & Graphic Designer
+            <br/>
+            <IconButton onClick={() => window.open("https://www.instagram.com/pepijnbram", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
+            </LeftSpan>
+          </RowBox>
+        </LineBox>
+
+        <LineBox>
+          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/stella_dpbphoto.png" alt="stella" style={{  width: "100%" }}  />
+          </RowBox>
+          <RowBox>
+            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+              I’m a DJ and Producer based in Berlin all about creating vibrant safe spaces through music for underrepresented groups. 
+              <br/>
+              I'm excited to be a part of DONE PROPERLY to further connect and collaborate with like-minded and driven creatives {'<'}3 !
+            <br/>
+            </Typography>
+            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
+            <br/>
+            <b>STELLA</b> she/her
+            <br/>
+            DJ & PR and Communications
+            <br/>
+            {/* <IconButton onClick={() => window.open("https://www.instagram.com/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton> */}
+            </LeftSpan>
+          </RowBox>
+        </LineBox>
+
       </Stack>
     </>
   );

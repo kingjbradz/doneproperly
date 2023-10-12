@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, useMediaQuery, Stack, Link } from "@mui/material";
+import { Typography, useMediaQuery, Stack } from "@mui/material";
 import { LineBox, RowBox } from "../../Components/Elements";
 
 const AboutUs = ({ themeMode }) => {
