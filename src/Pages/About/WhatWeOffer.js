@@ -28,7 +28,7 @@ const WhatWeOffer = ({ themeMode }) => {
             <br/><br/>
             <u>Hosting Mixes</u>
             <br/>
-            The rule is simple: anyone can send in a mix. We give a platform to any DJ and offer our growing listening fan base new artists to discover on a weekly basis
+            The rule is simple: anyone can send in a mix. We give a platform to any DJ and offer our growing listening fan base new artists to discover on a weekly basis.
             <br/><br/>
             <u>Access to Equipment & Private DJ Lessons</u>
             <br/>
