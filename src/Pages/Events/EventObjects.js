@@ -4,7 +4,7 @@ export const EventObjects = [
     name: "It's a Workshop",
     date: "14/10/2023",
     img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/its_a_workshop.jpg",
-    insta: "https://www.instagram.com/p/CxVD9sVsjjQ/"
+    insta: "https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform"
   },
   {
     id: 3,
