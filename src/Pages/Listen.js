@@ -4,8 +4,8 @@ import { PlaylistButton } from '../Components/Elements'
 
 const Listen = ({ noShow, setNoShow, themeMode }) => {
   const [state, setState] = useState({
-    color: "brown",
-    number: "1641758563",
+    color: "orange",
+    number: "1664518415",
   })
 
   setNoShow(true)
@@ -17,7 +17,8 @@ const Listen = ({ noShow, setNoShow, themeMode }) => {
     {color: "brown", number: "1641758563"},
     {color: "red", number: "1636042186"},
     {color: "purple", number: "1634278516"},
-    {color: "violet", number: "1615329022"}
+    {color: "violet", number: "1615329022"},
+    {color: "cyan", number: "1673040612"}
   ]
     
     return (

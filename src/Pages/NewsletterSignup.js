@@ -23,12 +23,12 @@ export const NewsletterSignup = () => {
                         <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
                         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                         <div class="mc-field-group">
-                        <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
-                        <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" value="">
+                        <label for="mce-FNAME">First Name</label>
+                        <input type="text" name="FNAME" class=" text" id="mce-FNAME" value="">
                         <span id="mce-FNAME-HELPERTEXT" class="helper_text">Enter your first name here</span></div>
                         <div class="mc-field-group">
-                        <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
-                        <input type="text" name="LNAME" class="required text" id="mce-LNAME" required="" value="">
+                        <label for="mce-LNAME">Last Name</label>
+                        <input type="text" name="LNAME" class=" text" id="mce-LNAME" value="">
                         <span id="mce-LNAME-HELPERTEXT" class="helper_text">Enter your last name here</span>
                     </div>  
                     <div class="mc-field-group">

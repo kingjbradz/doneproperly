@@ -8,7 +8,7 @@ const DonePropImg = ({ themeMode, noShow }) => {
         location.pathname !== "/" &&
         <Box sx={{ marginTop: 8 }}>
             <img 
-            style={{ borderRadius: "50%", maxHeight: "75px", maxWidth: "75px", margin: "32px 0", pointerEvents: "none", display: noShow && "none" }}
+            style={{ borderRadius: "50%", maxHeight: "35px", maxWidth: "35px", margin: "12px 0", pointerEvents: "none", display: noShow && "none" }}
             src={ themeMode ? "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_2.jpeg" : "https://d1g9ggdtg3kjm9.cloudfront.net/brandimages/1zu1+website+corner+logo_.jpeg" } alt="logo"/>
         </Box>
     )

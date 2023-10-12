@@ -14,17 +14,14 @@ import {
 import Sidebar from "./Sidebar";
 import { ThemeModeButton } from "./Elements";
 import SocialLinks from "./SocialLinks";
-import DonePropImg from "./DonePropImg";
 
 const navItems = [
   { text: "Home", path: "/" },
   { text: "About", path: "/about" },
-  { text: "Team", path: "/team" },
   { text: "Events", path: "/events" },
-  { text: "Contact", path: "/contact" },
-  { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" },
   { text: "Listen", path: "/listen" },
-  { text: "Impressum", path: "/impressum" },
+  { text: "Contact", path: "/contact" },
+  { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" }
 ];
 
 const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
@@ -43,7 +40,7 @@ const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
   };
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
+    <Box sx={{ display: "flex", justifyContent: "center", flexShrink: "0", height: "64px" }}>
       <CssBaseline />
       <AppBar sx={{ bgcolor: "brand.secondary", boxShadow: 0 }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
@@ -55,7 +52,7 @@ const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
                 minHeight: "inherit",
               }}
             >
-              <ThemeModeButton themeMode={themeMode} handleMode={handleMode} />
+              { isMD && <ThemeModeButton themeMode={themeMode} handleMode={handleMode} /> }
               <Box
                 sx={{
                   display: { xs: "none", sm: "flex" },
@@ -121,10 +118,11 @@ const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {
               />
             </Box>
           )}
+          {!isMD && <ThemeModeButton themeMode={themeMode} handleMode={handleMode} />}
+          {!isMD && <Box sx={{ marginRight: 5 }} />}
           {isMD && <SocialLinks /> }
         </Toolbar>
       </AppBar>
-      <DonePropImg themeMode={themeMode} noShow={noShow} />
     </Box>
   );
 };

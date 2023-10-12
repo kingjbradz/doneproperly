@@ -1,6 +1,5 @@
 import React from "react";
 import { Drawer, Button, Box, IconButton } from "@mui/material";
-import { ThemeModeButton } from "./Elements";
 import CloseIcon from '@mui/icons-material/Close';
 import SocialLinks from "./SocialLinks";
 
@@ -8,18 +7,12 @@ const Sidebar = ({
   sidebarOpen,
   setSidebarOpen,
   handleSidebar,
-  themeMode,
   navItems,
   theme,
   location,
   navigate,
-  setThemeMode
 }) => {
   const drawerWidth = "240px";
-
-  const handleMode = () => {
-    setThemeMode((current) => !current);
-  };
 
   const handleMobileRoute = (v) => {
     v.includes("https") ? 
@@ -47,7 +40,6 @@ const Sidebar = ({
         <IconButton onClick={() => setSidebarOpen(false)} sx={{ color: "brand.primary", marginRight: 1 }}>
           <CloseIcon />
         </IconButton>
-        <ThemeModeButton themeMode={themeMode} handleMode={handleMode} />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", marginTop: 5 }}>
         {navItems.map(({ text, path }, index) => {
