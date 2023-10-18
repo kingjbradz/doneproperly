@@ -181,7 +181,53 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             DJ & PR and Communications
             <br/>
-            {/* <IconButton onClick={() => window.open("https://www.instagram.com/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton> */}
+            <IconButton onClick={() => window.open("https://instagram.com/onlysimzzz", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
+            <IconButton onClick={() => window.open("https://soundcloud.com/sthsounds814417157", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
+            </LeftSpan>
+          </RowBox>
+        </LineBox>
+
+        <LineBox>
+          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/sia_dpbphoto.png" alt="sia" style={{  width: "100%" }}  />
+          </RowBox>
+          <RowBox>
+            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+              Accessibility to opportunities has been a pivotal theme in my life and practice. While the creative scene can feel and act hostile to newcomers, who in fact need support the most, I believe it can and should be different.
+              <br/>
+              I find it beautiful when people learn and grow together through intuitive experimentation and exchange of experience.
+            <br/>
+            </Typography>
+            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
+            <br/>
+            <b>SIA</b> she/her
+            <br/>
+            not a DJ & Graphic Designer
+            <br/>
+            <IconButton onClick={() => window.open("https://www.instagram.com/d.e.sia", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
+            </LeftSpan>
+          </RowBox>
+        </LineBox>
+
+        <LineBox>
+          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/szymon_dpbphoto.png" alt="szymon" style={{  width: "100%" }}  />
+          </RowBox>
+          <RowBox>
+            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+              I joined DONE PROPERLY for the sense of community and the opportunity to contribute to something new on Berlin's scene. 
+              <br/>
+              At the end it's simply just all about how the music brings us together.
+            <br/>
+            </Typography>
+            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
+            <br/>
+            <b>SZYMON</b> he/him
+            <br/>
+            DJ & team member
+            <br/>
+            <IconButton onClick={() => window.open("https://www.instagram.com/chrst.wav", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
+            <IconButton onClick={() => window.open("https://soundcloud.com/szymon-chrost", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
           </RowBox>
         </LineBox>
