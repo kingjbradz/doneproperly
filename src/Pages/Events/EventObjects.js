@@ -1,10 +1,17 @@
 export const EventObjects = [
   {
+    id: 5,
+    name: "It's a Vibe",
+    date: "14/10/2023",
+    img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/its_a_vibe.jpeg",
+    insta: "https://www.instagram.com/p/CxdnZ-cM8Xe/"
+  },
+  {
     id: 4,
     name: "It's a Workshop",
     date: "14/10/2023",
     img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/its_a_workshop.jpg",
-    insta: "https://docs.google.com/forms/d/e/1FAIpQLSdPqR1VTbh8KuUhg-un-qM1eGnUzUXs5kRfkmxnKDhxEPhZEg/viewform"
+    insta: "https://www.instagram.com/p/CxVD9sVsjjQ/"
   },
   {
     id: 3,
