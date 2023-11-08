@@ -22,7 +22,7 @@ const AboutUs = ({ themeMode }) => {
                 marginBottom: !is1000 && 2,
               }}
             >
-              DONE PROPERLY is a queer-owned music collective operating in Berlin with the objective of making music easily accessible to all, through skill-sharing, creating diverse platforms and easy access to equipment.
+              <b>DONE PROPERLY</b> IS A QUEER-OWNED MUSIC COLLECTIVE OPERATING IN BERLIN WITH THE OBJECTIVE OF MAKING MUSIC EASILY ACCESSIBLE TO ALL, THROUGH SKILL-SHARING, CREATING DIVERSE PLATFORMS AND EASY ACCESS TO EQUIPMENT.
             </Typography>
           </RowBox>
         </LineBox>
