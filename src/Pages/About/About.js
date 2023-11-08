@@ -22,7 +22,7 @@ const AboutUs = ({ themeMode }) => {
                 marginBottom: !is1000 && 2,
               }}
             >
-              WE ARE A QUEER OWNED BERLIN-BASED DJ COLLECTIVE BRINGING MUSIC BACK TO THE PEOPLE THROUGH SKILL SHARING, PROPER EQUIPMENT, AND COMMUNITY.
+              DONE PROPERLY is a queer-owned music collective operating in Berlin with the objective of making music easily accessible to all, through skill-sharing, creating diverse platforms and easy access to equipment.
             </Typography>
           </RowBox>
         </LineBox>
