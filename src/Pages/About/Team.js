@@ -137,7 +137,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>JIMMY</b> he/they
             <br/>
-            DJ & team member
+            DJ & team lead
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/general_whatever", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>

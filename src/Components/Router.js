@@ -9,6 +9,7 @@ import App404 from "../Pages/App404";
 import EventsContainer from "../Pages/EventsContainer"
 import NewsletterSignup from "../Pages/NewsletterSignup";
 import Listen from "../Pages/Listen";
+import StreamContainer  from "../Pages/Stream/StreamContainer"
 
 const Router = ({ themeMode, noShow, setNoShow }) => {
   const location = useLocation();
@@ -79,6 +80,19 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
             />
           }
         />
+<<<<<<< HEAD
+=======
+        <Route 
+          path="/watch"
+          element={
+            <StreamContainer
+              noShow={noShow}
+              setNoShow={setNoShow}
+              themeMode={themeMode}
+            />
+          }
+        />
+>>>>>>> 3930fddf1071ed9bc17b12bdb76e330bcde21472
         <Route
           path="/*"
           element={<App404 noShow={setNoShow(false)} themeMode={themeMode} />}
