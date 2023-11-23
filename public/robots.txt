@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://doneproperly.berlin/sitemap.xml
