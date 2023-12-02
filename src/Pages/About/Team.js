@@ -54,7 +54,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>NOIR</b> she/her
             <br/>
-            founder & DJ
+            Founder & DJ
             <br />
             <IconButton onClick={() => window.open("https://www.instagram.com/noirleona/", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             <IconButton onClick={() => window.open("https://soundcloud.com/leona-clayton", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
@@ -75,7 +75,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>JORDAN</b> he/him
             <br/>
-            co-founder, DJ & tech dude
+            Co-Founder, DJ & Tech Dude
             <br />
             <IconButton onClick={() => window.open("https://www.instagram.com/kingjbradz/", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             <IconButton onClick={() => window.open("https://soundcloud.com/jbradztyo", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
@@ -97,7 +97,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>REBECCA</b> she/they
             <br/>
-            co-founder, not a DJ & creative manager
+            Co-Founder, Not a DJ & Creative Manager
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/miirjaa/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
@@ -117,7 +117,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>ANNA</b> she/her
             <br/>
-            not a DJ & visual communication
+            Not a DJ & Graphic Designer
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/annamialuisa/", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
@@ -137,7 +137,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>JIMMY</b> he/they
             <br/>
-            DJ & team lead
+            DJ & Team Lead
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/general_whatever", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
@@ -157,7 +157,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>PEPIJN</b> he/they
             <br/>
-            not a DJ & Graphic Designer
+            Not a DJ & Graphic Designer
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/pepijnbram", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
@@ -179,7 +179,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>STELLA</b> she/her
             <br/>
-            DJ & PR and Communications
+            DJ, PR & Communications
             <br/>
             <IconButton onClick={() => window.open("https://instagram.com/onlysimzzz", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             <IconButton onClick={() => window.open("https://soundcloud.com/sthsounds814417157", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
@@ -202,7 +202,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>SIA</b> she/her
             <br/>
-            not a DJ & Graphic Designer
+            Not a DJ & Graphic Designer
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/d.e.sia", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
@@ -224,7 +224,7 @@ const AboutUs = ({ themeMode }) => {
             <br/>
             <b>SZYMON</b> he/him
             <br/>
-            DJ & team member
+            DJ & Team Member
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/chrst.wav", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             <IconButton onClick={() => window.open("https://soundcloud.com/szymon-chrost", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>

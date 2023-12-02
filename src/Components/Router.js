@@ -80,8 +80,6 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
             />
           }
         />
-<<<<<<< HEAD
-=======
         <Route 
           path="/watch"
           element={
@@ -92,7 +90,6 @@ const Router = ({ themeMode, noShow, setNoShow }) => {
             />
           }
         />
->>>>>>> 3930fddf1071ed9bc17b12bdb76e330bcde21472
         <Route
           path="/*"
           element={<App404 noShow={setNoShow(false)} themeMode={themeMode} />}
