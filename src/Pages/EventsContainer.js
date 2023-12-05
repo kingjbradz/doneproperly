@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, useMediaQuery, Typography, Button } from "@mui/material";
+import 
+{ 
+  Box, 
+  // useMediaQuery, 
+  // Typography, 
+  // Button 
+} 
+  from "@mui/material";
 import PastEvents from "./Events/PastEvents";
 import UpcomingEvents from "./Events/UpcomingEvents";
 

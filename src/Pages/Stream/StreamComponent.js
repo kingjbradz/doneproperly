@@ -1,9 +1,10 @@
 import React from "react"
-import { Box, Typography } from "@mui/material"
+import { Box, Typography, useMediaQuery } from "@mui/material"
 
 const StreamComponent = ({ name, dateVenue, embed, link }) => {
+  const is1000 = useMediaQuery("( min-width: 1000px )")
   return (
-    <Box sx={{ width: "100%", maxWidth: "350px" }}>
+    <Box sx={{ width: "100%", maxWidth: "350px", marginTop: is1000 && 2, marginRight: is1000 && 2 }}>
       <Box sx={{ maxWidth: "350px" }}>{embed}</Box>
       <Box
         onClick={() => window.open(link, "_blank")}
