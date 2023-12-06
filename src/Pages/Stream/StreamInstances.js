@@ -1,7 +1,7 @@
 export const StreamInstances = [
   {
     name: "jbradz",
-    dateVenue: "DP HQ - 04/20/69",
+    dateVenue: "Rec Sessions #1 - 04/20/69",
     link: "https://www.youtube.com/watch?v=9GOmyl3xsrQ",
     embed: (
       <iframe
@@ -16,7 +16,7 @@ export const StreamInstances = [
   },
   {
     name: "DJ Skain & Shimmi Yo",
-    dateVenue: "DP HQ - 04/20/69",
+    dateVenue: "Rec Sessions #1 - 04/20/69",
     link: "https://www.youtube.com/watch?v=h1u2wyyIAUU",
     embed: (
       <iframe
@@ -32,7 +32,7 @@ export const StreamInstances = [
   },
   {
     name: "Christophe Darbouze",
-    dateVenue: "DP HQ - 04/20/69",
+    dateVenue: "Rec Sessions #1 - 04/20/69",
     link: "https://www.youtube.com/watch?v=j8bYo8GEzEA&t=3s",
     embed: (
       <iframe
@@ -48,7 +48,7 @@ export const StreamInstances = [
   },
   {
     name: "Yuri Nagahori",
-    dateVenue: "DP HQ - 04/20/69",
+    dateVenue: "Rec Sessions #1 - 04/20/69",
     link: "https://www.youtube.com/watch?v=0zf4XeGm3Ss&t=2s",
     embed: (
       <iframe
