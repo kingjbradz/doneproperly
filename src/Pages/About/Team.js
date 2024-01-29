@@ -232,6 +232,29 @@ const AboutUs = ({ themeMode }) => {
           </RowBox>
         </LineBox>
 
+        <LineBox>
+          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
+          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/andi_dpbphoto.png" alt="szymon" style={{  width: "100%" }}  />
+          </RowBox>
+          <RowBox>
+            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
+              As a DJ and Event Manager, I love creating spaces for likeminded people and bringing people together through music.
+              <br/>
+              But I feel doing anything in this city can feel volatile pretty fast. Having a community like DONE PROPERLY with all different kinds of talent can enable us all to create something sustainable.
+              <br/>
+            </Typography>
+            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
+            <br/>
+            <b>ANDI</b> he/him
+            <br/>
+            DJ & Team Member
+            <br/>
+            <IconButton onClick={() => window.open("https://www.instagram.com/_lamperttt", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
+            <IconButton onClick={() => window.open("https://soundcloud.com/lampert_bln", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
+            </LeftSpan>
+          </RowBox>
+        </LineBox>
+
       </Stack>
     </>
   );
