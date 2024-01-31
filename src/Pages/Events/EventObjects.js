@@ -1,24 +1,38 @@
 export const EventObjects = [
   {
-    id: 6,
+    id: 8,
     name: "Rec Sessions #1",
-    date: "06/10/2023",
-    img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/rec_sessions_1.png",
-    insta: "https://www.instagram.com/p/C0RutySMNut"
+    date: "24/02/2024",
+    img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/black_to_basics.jpg",
+    insta: "https://www.instagram.com/p/C2iKPl4spp5"
   },
   {
-    id: 5,
+    id: 7,
+    name: "Rec Sessions #2",
+    date: "02/12/2023",
+    img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/rec_sessions_2.png",
+    insta: "https://www.instagram.com/doneproperlyberlin"
+  },
+  {
+    id: 6,
     name: "It's a Vibe",
     date: "14/10/2023",
     img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/its_a_vibe.jpeg",
     insta: "https://www.instagram.com/p/CxdnZ-cM8Xe/"
   },
   {
-    id: 4,
+    id: 5,
     name: "It's a Workshop",
     date: "14/10/2023",
     img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/its_a_workshop.jpg",
     insta: "https://www.instagram.com/p/CxVD9sVsjjQ/"
+  },
+  {
+    id: 4,
+    name: "Rec Sessions #1",
+    date: "06/10/2023",
+    img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/rec_sessions_1.png",
+    insta: "https://www.instagram.com/p/C0RutySMNut"
   },
   {
     id: 3,
