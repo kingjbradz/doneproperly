@@ -1,7 +1,7 @@
 export const EventObjects = [
   {
     id: 8,
-    name: "Rec Sessions #1",
+    name: "Black to Basics",
     date: "24/02/2024",
     img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/black_to_basics.jpg",
     insta: "https://www.instagram.com/p/C2iKPl4spp5"
