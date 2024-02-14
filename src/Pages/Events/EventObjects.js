@@ -1,17 +1,10 @@
 export const EventObjects = [
   {
-    id: 8,
+    id: 7,
     name: "Black to Basics",
     date: "24/02/2024",
     img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/black_to_basics.jpg",
     insta: "https://www.instagram.com/p/C2iKPl4spp5"
-  },
-  {
-    id: 7,
-    name: "Rec Sessions #2",
-    date: "02/12/2023",
-    img: "https://d1g9ggdtg3kjm9.cloudfront.net/eventflyersforsite/rec_sessions_2.png",
-    insta: "https://www.instagram.com/doneproperlyberlin"
   },
   {
     id: 6,
