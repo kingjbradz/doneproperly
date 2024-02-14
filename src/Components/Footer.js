@@ -15,11 +15,17 @@ const Footer = () => {
         <Typography 
             variant="h4" sx={{ color: "brand.primary", bgcolor: "brand.secondary", paddingLeft: 2, cursor: "pointer" }}>
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
+            COME TO OUR NEXT <A target="_blank" href="https://www.instagram.com/p/C2iKPl4spp5">PARTY</A> ON FEB 24TH! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
+            COME TO OUR NEXT <A target="_blank" href="https://www.instagram.com/p/C2iKPl4spp5">PARTY</A> ON FEB 24TH! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
+            COME TO OUR NEXT <A target="_blank" href="https://www.instagram.com/p/C2iKPl4spp5">PARTY</A> ON FEB 24TH! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
+            COME TO OUR NEXT <A target="_blank" href="https://www.instagram.com/p/C2iKPl4spp5">PARTY</A> ON FEB 24TH! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
+            COME TO OUR NEXT <A target="_blank" href="https://www.instagram.com/p/C2iKPl4spp5">PARTY</A> ON FEB 24TH! {marginSpan}
             SIGN UP FOR OUR <A target="_blank" href="/newsletter">NEWSLETTER</A>! {marginSpan}
+            COME TO OUR NEXT <A target="_blank" href="https://www.instagram.com/p/C2iKPl4spp5">PARTY</A> ON FEB 24TH! {marginSpan}
         </Typography>
       </Marquee>
     </Box>
