@@ -1,7 +1,7 @@
 import React from "react"
 import { Box, Typography, useMediaQuery } from "@mui/material"
 
-const StreamComponent = ({ name, dateVenue, embed, link }) => {
+const StreamComponent = ({ name, dateVenue, embed, link, themeMode }) => {
   const is1000 = useMediaQuery("( min-width: 1000px )")
   return (
     <Box sx={{ width: "100%", maxWidth: "350px", marginTop: is1000 && 2, marginRight: is1000 && 2 }}>
@@ -19,8 +19,8 @@ const StreamComponent = ({ name, dateVenue, embed, link }) => {
           },
         }}
       >
-        <Typography sx={{ marginBottom: 1, fontSize: "1.25rem" }}>{name}</Typography>
-        <Typography sx={{ fontSize: ".75rem" }}>{dateVenue}</Typography>
+        <Typography sx={{ marginBottom: 1, fontSize: "1.25rem", color: themeMode ? "brand.primary" : "brand.secondary" }}>{name}</Typography>
+        <Typography sx={{ fontSize: ".75rem", color: themeMode ? "brand.primary" : "brand.secondary" }}>{dateVenue}</Typography>
       </Box>
     </Box>
   );
