@@ -8,7 +8,7 @@ export const NewsletterSignup = () => {
         display: "flex",
         justifyContent: "center",
         fontFamily: '"Cooper Hewitt", sans-serif',
-        width: "100%",
+        width: "100%"
       }}
       dangerouslySetInnerHTML={{
         __html: `<div id="mc_embed_shell" style=" width: 100%; max-width: 600px; ">

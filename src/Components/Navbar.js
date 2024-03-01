@@ -22,7 +22,6 @@ const navItems = [
   { text: "Listen", path: "/listen" },
   { text: "Watch", path: "/watch" },
   { text: "Contact", path: "/contact" },
-  { text: "Join", path: "https://docs.google.com/forms/d/e/1FAIpQLScTPJWT7WLkgy26xdZnbTxcE8lOrRBWziPr8LY9zrWFiRxhYg/viewform?pli=1" }
 ];
 
 const Navbar = ({ themeMode, setThemeMode, noShow, setNoShow }) => {

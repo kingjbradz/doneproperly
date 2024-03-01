@@ -68,7 +68,7 @@ const AboutUs = ({ themeMode }) => {
           </RowBox>
           <RowBox>
             <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
-            I‘m a DJ from Australia, recently arrived in Berlin after living in Tapei, Tokyo, and Vancouver. Lover of disco, techno, breaks, havin‘ a good ol yarn and bringing my years of experience to you.
+            I‘m a DJ from Australia, living in between NYC and Berlin after living in Tapei, Tokyo, and Vancouver. Lover of disco, techno, breaks, havin‘ a good ol yarn and bringing my years of experience to you.
             <br/>
             </Typography>
             <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
@@ -126,26 +126,6 @@ const AboutUs = ({ themeMode }) => {
 
         <LineBox>
           <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/jimmy_dpbphoto.png" alt="jimmy" style={{  width: "100%" }}  />
-          </RowBox>
-          <RowBox>
-            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
-            Escaping the mediocrity of the corporate US EDM hellscape, I came to Berlin to find fellowship amongst likeminded people. This is exactly why I joined DP to not just integrate within the community but make a difference within the music scene locally and globally.
-            <br/>
-            </Typography>
-            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
-            <br/>
-            <b>JIMMY</b> he/they
-            <br/>
-            DJ & Team Lead
-            <br/>
-            <IconButton onClick={() => window.open("https://www.instagram.com/general_whatever", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
-            </LeftSpan>
-          </RowBox>
-        </LineBox>
-
-        <LineBox>
-          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
           <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/pep_dpbphoto.png" alt="pepijn" style={{  width: "100%" }}  />
           </RowBox>
           <RowBox>
@@ -160,29 +140,6 @@ const AboutUs = ({ themeMode }) => {
             Not a DJ & Graphic Designer
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/pepijnbram", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
-            </LeftSpan>
-          </RowBox>
-        </LineBox>
-
-        <LineBox>
-          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/stella_dpbphoto.png" alt="stella" style={{  width: "100%" }}  />
-          </RowBox>
-          <RowBox>
-            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
-              I’m a DJ and Producer based in Berlin all about creating vibrant safe spaces through music for underrepresented groups. 
-              <br/>
-              I'm excited to be a part of DONE PROPERLY to further connect and collaborate with like-minded and driven creatives {'<'}3 !
-            <br/>
-            </Typography>
-            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
-            <br/>
-            <b>STELLA</b> she/her
-            <br/>
-            DJ, PR & Communications
-            <br/>
-            <IconButton onClick={() => window.open("https://instagram.com/onlysimzzz", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
-            <IconButton onClick={() => window.open("https://soundcloud.com/sthsounds814417157", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
           </RowBox>
         </LineBox>
@@ -205,52 +162,6 @@ const AboutUs = ({ themeMode }) => {
             Not a DJ & Graphic Designer
             <br/>
             <IconButton onClick={() => window.open("https://www.instagram.com/d.e.sia", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
-            </LeftSpan>
-          </RowBox>
-        </LineBox>
-
-        <LineBox>
-          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/szymon_dpbphoto.png" alt="szymon" style={{  width: "100%" }}  />
-          </RowBox>
-          <RowBox>
-            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
-              I joined DONE PROPERLY for the sense of community and the opportunity to contribute to something new on Berlin's scene. 
-              <br/>
-              At the end it's simply just all about how the music brings us together.
-            <br/>
-            </Typography>
-            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
-            <br/>
-            <b>SZYMON</b> he/him
-            <br/>
-            DJ & Team Member
-            <br/>
-            <IconButton onClick={() => window.open("https://www.instagram.com/chrst.wav", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
-            <IconButton onClick={() => window.open("https://soundcloud.com/szymon-chrost", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
-            </LeftSpan>
-          </RowBox>
-        </LineBox>
-
-        <LineBox>
-          <RowBox sx={{ margin: 2, maxWidth: "230px" }}>
-          <img src="https://d1g9ggdtg3kjm9.cloudfront.net/teamphotos/andi_dpbphoto.png" alt="szymon" style={{  width: "100%" }}  />
-          </RowBox>
-          <RowBox>
-            <Typography sx={{color: themeMode ? "brand.primary" : "brand.secondary",fontSize:"14px", maxWidth: "500px"}}>
-              As a DJ and Event Manager, I love creating spaces for likeminded people and bringing people together through music.
-              <br/>
-              But I feel doing anything in this city can feel volatile pretty fast. Having a community like DONE PROPERLY with all different kinds of talent can enable us all to create something sustainable.
-              <br/>
-            </Typography>
-            <LeftSpan color={themeMode ? "brand.primary" : "brand.secondary"}>
-            <br/>
-            <b>ANDI</b> he/him
-            <br/>
-            DJ & Team Member
-            <br/>
-            <IconButton onClick={() => window.open("https://www.instagram.com/_lamperttt", "_blank")} style={{ padding: 0, width: 16, marginRight: 5 }}><Icon icon="mdi:instagram" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
-            <IconButton onClick={() => window.open("https://soundcloud.com/lampert_bln", "_blank")} style={{ padding: 0, width: 16 }}><Icon icon="mdi:soundcloud" color={themeMode ? theme.palette.brand.primary : theme.palette.brand.secondary} /></IconButton>
             </LeftSpan>
           </RowBox>
         </LineBox>
